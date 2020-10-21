@@ -1,0 +1,3 @@
+[submodule "voce"]
+	path = voce
+	url = https://github.com/limbenjamin/voce.git
