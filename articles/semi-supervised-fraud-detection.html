@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Panagiotis Simakis">
+  <meta name="description" content="Semi-Supervised Fraud Detection | Kaggle kernel Intro dataset: Credit Card Fraud Detection keywords: fraud detection, novelty detection, ensembling,...">
+
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">  
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/theme/css/font.css" type="text/css" media="all">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/theme/css/style.css" type="text/css" media="all">
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/theme/js/functions.js"></script>
+
+  
+ 
+
+  <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Panagiotis Simakis Personal Website Full Atom Feed" />
+
+<meta name="keywords" content="keywords, python, machine learning, deep learning">
+
+
+
+  <title>Semi-Supervised Fraud Detection</title>
+
+  
+</head>
+
+<body class="home blog">
+  <div>
+    <header class="site-header">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="row">
+            <div class="site-navigation-inner col-sm-12">
+              <div class="navbar-header">
+                <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul id="menu-all-pages" class="nav navbar-nav">
+                <li class="menu-item"><a href="/" >Home
+<i class="fa  fa-lg"></i></a></li>
+                <li class="menu-item"><a href="/pages/resume" >Resume
+<i class="fa  fa-lg"></i></a></li>
+              </ul>
+              </div>
+              <div class="social">   
+                <a href="https://github.com/sp1thas" title="GitHub" >
+<i class="fa fa-github fa-lg"></i></a>
+                <a href="https://twitter.com/sp1thas" title="Twitter" >
+<i class="fa fa-twitter fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/psimakis/" title="Linkedin" >
+<i class="fa fa-linkedin fa-lg"></i></a>
+                <a href="https://stackoverflow.com/users/6779252/panagiotis-simakis" title="Stackoverflow" >
+<i class="fa fa-stack-overflow fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav><!-- .site-navigation -->
+
+      <div class="container">
+      <div id="logo">
+        <span class="site-name"><a class="navbar-brand" href=""><img width="310" src="/images/home.png" class="attachment-full size-full" alt="logo">          </a>
+        </span><!-- end of .site-name -->
+      </div><!-- end of #logo -->
+        <div class="tagline">
+                <a href="/tag/dataset.html" >dataset (2)</a> &#124; 
+                <a href="/tag/deep-learning.html" >deep learning (1)</a> &#124; 
+                <a href="/tag/machine-learning.html" >machine learning (3)</a> &#124; 
+                <a href="/tag/nlp.html" >nlp (2)</a> &#124; 
+                <a href="/tag/python.html" >python (7)</a> &#124; 
+                <a href="/archives" >Archives (8)</a>
+        </div>
+    </div>
+
+  </header><!-- #masthead -->
+  </div>
+    <div id="content" class="site-content">
+      <div class="container main-content-area">
+        <div class="row">
+          <div class="main-content-inner col-sm-12 col-md-12">
+            <div id="primary" class="content-area">
+              <div id="main" class="site-main" role="main">
+                <div class="article-container">
+<article>
+  <div class="blog-item-wrap">
+    <div class="post-inner-content">
+      <header class="entry-header page-header">
+        <span class="cat-item"><time datetime="2020-03-30 18:40:00+03:00">Μαρ 30, 2020</time></span>
+        <h1 class="entry-title"><a href="/articles/semi-supervised-fraud-detection">Semi-Supervised Fraud Detection</a></h1>
+      </header><!-- .entry-header -->
+      <div class="fb-like" data-href="/articles/semi-supervised-fraud-detection" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+      <div class="entry-content">
+        <p>Kaggle <a href="https://www.kaggle.com/sp1thas/semi-supervised-fraud-detection">kernel</a></p>
+<h2>Intro</h2>
+<p>dataset: <a href="https://www.kaggle.com/mlg-ulb/creditcardfraud">Credit Card Fraud Detection</a></p>
+<p>keywords: <code>fraud detection</code>, <code>novelty detection</code>, <code>ensembling</code>, <code>learning representation</code>, <code>semi-supervised learning</code></p>
+<p>Usually, datasets for fraud detection are highly unbalanced. Instead of trying to resample the dataset, we are going to approach this problem as a Novelty Detection problem.</p>
+<p>In this kernel, we will describe the dataset briefly and then, we will compare multiple machine learning algorithms using some evaluation metrics.</p>
+<p>Most common machine learning algorithms for this kind of tasks are the following:</p>
+<ol>
+<li>Isolation forest</li>
+<li>One class SVM</li>
+<li>Autoencoders</li>
+</ol>
+<h2>Isolation Forest</h2>
+<p><img alt="isolation-tree" src="https://e-sciencecentral.org//upload/JKSEE/thumb/KSEE-2018-40-12-473f2.gif"></p>
+<p><a href="https://blog.easysol.net/using-isolation-forests-anamoly-detection/">source</a></p>
+<blockquote>
+<p>The Isolation Forest algorithm isolates observations by randomly selecting a feature and then randomly selecting a split value between the maximum and minimum values of the selected feature. The logic argument goes: isolating anomaly observations is easier because only a few conditions are needed to separate those cases from the normal observations. On the other hand, isolating normal observations require more conditions. Therefore, an anomaly score can be calculated as the number of conditions required to separate a given observation.</p>
+</blockquote>
+<h2>One Class SVM (OCSVM)</h2>
+<p><img alt="oneclasssvm" src="https://ars.els-cdn.com/content/image/1-s2.0-S0031320314002751-gr6.jpg"></p>
+<p><a href="https://towardsdatascience.com/outlier-detection-with-one-class-svms-5403a1a1878c">source</a></p>
+<blockquote>
+<p>A One-Class Support Vector Machine is an unsupervised learning algorithm that is trained only on the ‘normal’ data, in our case the negative examples. It learns the boundaries of these points and is therefore able to classify any points that lie outside the boundary as, you guessed it, outliers.</p>
+</blockquote>
+<h2>Autoencoders</h2>
+<p><a href="https://www.deeplearningbook.org/contents/autoencoders.html">source</a></p>
+<blockquote>
+<p>An autoencoder is a neural network that is trained to attempt to copy its input to its output. Internally, it has a hidden layer h that describes a code used to represent the input. The network may be viewed as consisting of two parts: an encoder function <code>h = f (x)</code> and a decoder that produces a reconstruction <code>r = g(h)</code>.</p>
+</blockquote>
+<p><img alt="autoencoder" src="https://miro.medium.com/max/3524/1*oUbsOnYKX5DEpMOK3pH_lg.png"></p>
+<p>In our case, we will train the autoencoder using samples of normal transactions only. When we feed the autoencoder an anomaly sample, the representation should have larger loss error. Therefore, by defining a loss threashold, this ANN model will work as novelty detection model.</p>
+<h2>Implementation</h2>
+<p><img alt="implementation" src="https://i.imgur.com/Y8FWKqi.png"></p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">IsolationForest</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">OneClassSVM</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">f1_score</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">precision_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">VotingClassifier</span><span class="p">,</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span><span class="p">,</span> <span class="n">IncrementalPCA</span><span class="p">,</span> <span class="n">LatentDirichletAllocation</span>
+<span class="kn">from</span> <span class="nn">sklearn.manifold</span> <span class="kn">import</span> <span class="n">TSNE</span>
+
+<span class="kn">from</span> <span class="nn">tqdm.notebook</span> <span class="kn">import</span> <span class="n">tqdm</span><span class="p">,</span> <span class="n">trange</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">NoReturn</span><span class="p">,</span> <span class="n">Union</span><span class="p">,</span> <span class="n">List</span>
+<span class="kn">from</span> <span class="nn">mlxtend.classifier</span> <span class="kn">import</span> <span class="n">EnsembleVoteClassifier</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="kn">from</span> <span class="nn">umap</span> <span class="kn">import</span> <span class="n">UMAP</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../input/creditcardfraud/creditcard.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Time</th>
+      <th>V1</th>
+      <th>V2</th>
+      <th>V3</th>
+      <th>V4</th>
+      <th>V5</th>
+      <th>V6</th>
+      <th>V7</th>
+      <th>V8</th>
+      <th>V9</th>
+      <th>...</th>
+      <th>V21</th>
+      <th>V22</th>
+      <th>V23</th>
+      <th>V24</th>
+      <th>V25</th>
+      <th>V26</th>
+      <th>V27</th>
+      <th>V28</th>
+      <th>Amount</th>
+      <th>Class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.0</td>
+      <td>-1.359807</td>
+      <td>-0.072781</td>
+      <td>2.536347</td>
+      <td>1.378155</td>
+      <td>-0.338321</td>
+      <td>0.462388</td>
+      <td>0.239599</td>
+      <td>0.098698</td>
+      <td>0.363787</td>
+      <td>...</td>
+      <td>-0.018307</td>
+      <td>0.277838</td>
+      <td>-0.110474</td>
+      <td>0.066928</td>
+      <td>0.128539</td>
+      <td>-0.189115</td>
+      <td>0.133558</td>
+      <td>-0.021053</td>
+      <td>149.62</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.0</td>
+      <td>1.191857</td>
+      <td>0.266151</td>
+      <td>0.166480</td>
+      <td>0.448154</td>
+      <td>0.060018</td>
+      <td>-0.082361</td>
+      <td>-0.078803</td>
+      <td>0.085102</td>
+      <td>-0.255425</td>
+      <td>...</td>
+      <td>-0.225775</td>
+      <td>-0.638672</td>
+      <td>0.101288</td>
+      <td>-0.339846</td>
+      <td>0.167170</td>
+      <td>0.125895</td>
+      <td>-0.008983</td>
+      <td>0.014724</td>
+      <td>2.69</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.0</td>
+      <td>-1.358354</td>
+      <td>-1.340163</td>
+      <td>1.773209</td>
+      <td>0.379780</td>
+      <td>-0.503198</td>
+      <td>1.800499</td>
+      <td>0.791461</td>
+      <td>0.247676</td>
+      <td>-1.514654</td>
+      <td>...</td>
+      <td>0.247998</td>
+      <td>0.771679</td>
+      <td>0.909412</td>
+      <td>-0.689281</td>
+      <td>-0.327642</td>
+      <td>-0.139097</td>
+      <td>-0.055353</td>
+      <td>-0.059752</td>
+      <td>378.66</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.0</td>
+      <td>-0.966272</td>
+      <td>-0.185226</td>
+      <td>1.792993</td>
+      <td>-0.863291</td>
+      <td>-0.010309</td>
+      <td>1.247203</td>
+      <td>0.237609</td>
+      <td>0.377436</td>
+      <td>-1.387024</td>
+      <td>...</td>
+      <td>-0.108300</td>
+      <td>0.005274</td>
+      <td>-0.190321</td>
+      <td>-1.175575</td>
+      <td>0.647376</td>
+      <td>-0.221929</td>
+      <td>0.062723</td>
+      <td>0.061458</td>
+      <td>123.50</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2.0</td>
+      <td>-1.158233</td>
+      <td>0.877737</td>
+      <td>1.548718</td>
+      <td>0.403034</td>
+      <td>-0.407193</td>
+      <td>0.095921</td>
+      <td>0.592941</td>
+      <td>-0.270533</td>
+      <td>0.817739</td>
+      <td>...</td>
+      <td>-0.009431</td>
+      <td>0.798278</td>
+      <td>-0.137458</td>
+      <td>0.141267</td>
+      <td>-0.206010</td>
+      <td>0.502292</td>
+      <td>0.219422</td>
+      <td>0.215153</td>
+      <td>69.99</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 31 columns</p>
+</div>
+
+<h2>Dataset</h2>
+<ul>
+<li><code>V{1-28}</code>: <code>PCA</code> decompossition outcome</li>
+<li><code>Class</code> label (0: normal, 1: fraudulent)</li>
+<li><code>Time</code>: Number of seconds elapsed between this transaction and the first transaction in the dataset</li>
+<li><code>Amount</code>: transaction amount</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="c1"># use a dataset sample for development purposes</span>
+<span class="n">dev</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Class&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">Class</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;pie&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Fraudulent VS Genuine Transactions&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="err">&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f5a7b0f96d0&gt;</span>
+</pre></div>
+
+
+<p><img alt="png" src="/images/semi-supervised-fraud-detection_6_1.png"></p>
+<div class="highlight"><pre><span></span><span class="n">df_s</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df_s</span><span class="p">[[</span><span class="n">_</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">_</span> <span class="o">!=</span> <span class="s1">&#39;Class&#39;</span><span class="p">]]</span>
+
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">tsne</span> <span class="o">=</span> <span class="n">TSNE</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ump</span> <span class="o">=</span> <span class="n">UMAP</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ipca</span> <span class="o">=</span> <span class="n">IncrementalPCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">x_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">x_tsne</span> <span class="o">=</span> <span class="n">tsne</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">x_umap</span> <span class="o">=</span> <span class="n">ump</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</pre></div>
+
+
+<p><code>PCA</code>, <code>UMAP</code> and <code>t-SNE</code> will be used for further dimensionality reduction in order to visualize a sample of the dataset</p>
+<div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+<span class="n">sizes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">df_s</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="c1"># represent fraud with bigger point</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x_pca</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">x_pca</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="n">sizes</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">df_s</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x_tsne</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">x_tsne</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="n">sizes</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">df_s</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x_umap</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">x_umap</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="n">sizes</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">df_s</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;PCA&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;t-SNE&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;UMAP&#39;</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+
+<p><img alt="png" src="/images/semi-supervised-fraud-detection_9_0.png"></p>
+<h1>Preprocessing</h1>
+<p><code>Time</code> and <code>Amount</code> fields should be scaled</p>
+<p>During this step, the dataset will be splited in two parts:
+1. ~283K samples of normat transactions (Training set)
+2. All fraudulent samples and equal number of normal samples (Test set)</p>
+<p>Novelty detection is concered as semi-supervised task due to the fact that only the normal samples are used during the phase of training. During the phase of evaluation, a balanced subset of normal and fraudulent samples will be used.</p>
+<div class="highlight"><pre><span></span><span class="c1"># time and amount scaling</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Amount&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Amount&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+<span class="n">df_anom</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">df_norm</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="k">if</span> <span class="n">dev</span><span class="p">:</span>
+    <span class="n">df_norm</span> <span class="o">=</span> <span class="n">df_norm</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">df_test_norm</span> <span class="o">=</span> <span class="n">df_norm</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">df_anom</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">df_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span>
+    <span class="n">df_anom</span><span class="p">,</span>
+    <span class="n">df_test_norm</span>
+<span class="p">])</span>
+<span class="n">df_train</span> <span class="o">=</span> <span class="n">df_norm</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">df_test_norm</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+
+<span class="n">feature_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">_</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">_</span> <span class="o">!=</span> <span class="s1">&#39;Class&#39;</span><span class="p">]</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">X_train</span> <span class="o">=</span> <span class="n">df_train</span><span class="p">[</span><span class="n">feature_cols</span><span class="p">]</span>
+<span class="n">y_train</span> <span class="o">=</span> <span class="n">df_train</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span> <span class="c1"># will not be used</span>
+<span class="n">X_test</span> <span class="o">=</span> <span class="n">df_test</span><span class="p">[</span><span class="n">feature_cols</span><span class="p">]</span>
+<span class="n">y_test</span> <span class="o">=</span> <span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span> <span class="c1"># for evaluation</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">train: [</span><span class="si">{:&gt;8}</span><span class="s1"> x </span><span class="si">{:&lt;5}</span><span class="s1">]</span>
+<span class="s1"> test: [</span><span class="si">{:&gt;8}</span><span class="s1"> x </span><span class="si">{:&lt;5}</span><span class="s1">]</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="o">*</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="c">train: [  283823 x 30   ]</span>
+<span class="c"> test: [     984 x 30   ]</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sensitivity_keras</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;credits: https://datascience.stackexchange.com/a/40746/28592</span>
+
+<span class="sd">    param:</span>
+<span class="sd">    y_pred - Predicted labels</span>
+<span class="sd">    y_true - True labels </span>
+<span class="sd">    Returns:</span>
+<span class="sd">    Specificity score</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">neg_y_true</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">y_true</span>
+    <span class="n">neg_y_pred</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">y_pred</span>
+    <span class="n">fp</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">backend</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">neg_y_true</span> <span class="o">*</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">tn</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">backend</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">neg_y_true</span> <span class="o">*</span> <span class="n">neg_y_pred</span><span class="p">)</span>
+    <span class="n">specificity</span> <span class="o">=</span> <span class="n">tn</span> <span class="o">/</span> <span class="p">(</span><span class="n">tn</span> <span class="o">+</span> <span class="n">fp</span> <span class="o">+</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">backend</span><span class="o">.</span><span class="n">epsilon</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">specificity</span>
+</pre></div>
+
+
+<h1>Training</h1>
+<p>We are going to define some wrapper, these classes will work as adapters in order to have a uniform prediction.</p>
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Scaled_IsolationForest</span><span class="p">(</span><span class="n">IsolationForest</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;The purpose of this class is to transform prediction values from {-1, 1} to {1,0}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="n">pred</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">scale_func</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vectorize</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">scale_func</span><span class="p">(</span><span class="n">pred</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Scaled_OneClass_SVM</span><span class="p">(</span><span class="n">OneClassSVM</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Transform OneClassSVM prediction into 0s and 1s</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">y</span><span class="o">==-</span><span class="mi">1</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)])</span>
+
+<span class="k">class</span> <span class="nc">NoveltyDetection_Sequential</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;This custom `tf.keras.models.Sequential` based class transforms autoencoder&#39;s output into {1,0}.</span>
+<span class="sd">    Output value is determined based on reproduction (decode) loss. If reproduction loss is more than a threashold then, the inpu sample is considered as anomaly (outlier).</span>
+<span class="sd">    Based on few experiments, 1.5 is a dissent threashold. Future work: determine threashold using a more sophisticated method.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">pred</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">mse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">pred</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">scale_func</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vectorize</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mf">1.5</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">scale_func</span><span class="p">(</span><span class="n">mse</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="c1"># define early stop in order to prevent overfitting and useless training</span>
+<span class="n">early_stop</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">EarlyStopping</span><span class="p">(</span>
+    <span class="n">monitor</span><span class="o">=</span><span class="s1">&#39;mse&#39;</span><span class="p">,</span>
+    <span class="n">patience</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
+    <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;min&#39;</span><span class="p">,</span>
+    <span class="n">restore_best_weights</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># it&#39;s a common practice to store the best model</span>
+<span class="n">checkpoint</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">ModelCheckpoint</span><span class="p">(</span>
+    <span class="n">filepath</span><span class="o">=</span><span class="s1">&#39;autoenc.hdf5&#39;</span><span class="p">,</span>
+    <span class="n">save_best_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">monitor</span><span class="o">=</span><span class="s1">&#39;val_loss&#39;</span><span class="p">,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;min&#39;</span><span class="p">,</span>
+    <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span>
+<span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_autoencoder</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Builds an autoencoder</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">NoveltyDetection_Sequential</span><span class="p">([</span>
+        <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">)),</span>
+        <span class="c1"># add some noise to prevent overfitting</span>
+        <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">GaussianNoise</span><span class="p">(</span><span class="mf">0.05</span><span class="p">),</span>
+        <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+        <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)</span>
+    <span class="p">])</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span> 
+                        <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;mse&#39;</span><span class="p">,</span>
+                        <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">,</span> <span class="n">sensitivity_keras</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">model</span>
+</pre></div>
+
+
+<p>Below we define a dictionary with models and hyperparameters that we are going to use during the phase of training</p>
+<div class="highlight"><pre><span></span><span class="n">clfs</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;isolation_forest&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;Isolation Forest&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;clb&#39;</span><span class="p">:</span> <span class="n">Scaled_IsolationForest</span><span class="p">,</span>
+        <span class="s1">&#39;params&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;contamination&#39;</span><span class="p">:</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="mi">300</span>
+        <span class="p">},</span>
+        <span class="s1">&#39;predictions&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="kc">None</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;ocsvm&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;OneClass SVM&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;clb&#39;</span><span class="p">:</span> <span class="n">Scaled_OneClass_SVM</span><span class="p">,</span>
+        <span class="s1">&#39;params&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;kernel&#39;</span><span class="p">:</span> <span class="s1">&#39;rbf&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;gamma&#39;</span><span class="p">:</span> <span class="mf">0.3</span><span class="p">,</span>
+            <span class="s1">&#39;nu&#39;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">,</span>
+        <span class="p">},</span>
+        <span class="s1">&#39;prediction&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="kc">None</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;auto-encoder&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;Autoncoder&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;clb&#39;</span><span class="p">:</span> <span class="n">get_autoencoder</span><span class="p">,</span>
+        <span class="s1">&#39;params&#39;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s1">&#39;fit_params&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">X_train</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">X_train</span><span class="p">,</span>
+            <span class="s1">&#39;validation_split&#39;</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>
+            <span class="s1">&#39;callbacks&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">early_stop</span><span class="p">,</span> <span class="n">checkpoint</span><span class="p">],</span>
+            <span class="s1">&#39;epochs&#39;</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span>
+            <span class="s1">&#39;batch_size&#39;</span><span class="p">:</span> <span class="mi">256</span><span class="p">,</span>
+            <span class="s1">&#39;verbose&#39;</span><span class="p">:</span> <span class="mi">0</span>
+        <span class="p">},</span>
+        <span class="s1">&#39;predictions&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="kc">None</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">time</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">trange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">clfs</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">clfs</span><span class="p">:</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">set_description</span><span class="p">(</span><span class="n">clfs</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;label&#39;</span><span class="p">])</span>
+    <span class="n">clfs</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;model&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">clfs</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;clb&#39;</span><span class="p">](</span><span class="o">**</span><span class="n">clfs</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;params&#39;</span><span class="p">])</span>
+    <span class="k">if</span> <span class="s1">&#39;fit_params&#39;</span> <span class="ow">in</span> <span class="n">clfs</span><span class="p">[</span><span class="n">name</span><span class="p">]:</span>
+        <span class="n">clfs</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;model&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="o">**</span><span class="n">clfs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;fit_params&#39;</span><span class="p">,</span> <span class="p">{}))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">clfs</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;model&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+    <span class="n">clfs</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;predictions&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">clfs</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;model&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">HBox</span><span class="p">(</span><span class="n">children</span><span class="o">=</span><span class="p">(</span><span class="n">FloatProgress</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="k">max</span><span class="o">=</span><span class="mi">3</span><span class="p">.</span><span class="mi">0</span><span class="p">),</span> <span class="n">HTML</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)))</span>
+
+
+
+<span class="n">CPU</span> <span class="n">times</span><span class="p">:</span> <span class="k">user</span> <span class="mi">2</span><span class="n">h</span> <span class="mi">37</span><span class="k">min</span> <span class="mi">34</span><span class="n">s</span><span class="p">,</span> <span class="n">sys</span><span class="p">:</span> <span class="mi">38</span><span class="p">.</span><span class="mi">2</span> <span class="n">s</span><span class="p">,</span> <span class="n">total</span><span class="p">:</span> <span class="mi">2</span><span class="n">h</span> <span class="mi">38</span><span class="k">min</span> <span class="mi">12</span><span class="n">s</span>
+<span class="n">Wall</span> <span class="k">time</span><span class="p">:</span> <span class="mi">2</span><span class="n">h</span> <span class="mi">36</span><span class="k">min</span> <span class="mi">7</span><span class="n">s</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">print_eval_metrics</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Function for printing purposes</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">header</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:&gt;20}</span><span class="se">\t</span><span class="si">{:&gt;10}</span><span class="se">\t</span><span class="si">{:&gt;10}</span><span class="se">\t</span><span class="si">{:&gt;8}</span><span class="se">\t</span><span class="si">{:&gt;5}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39;Algorith&#39;</span><span class="p">,</span> <span class="s1">&#39;Accuracy&#39;</span><span class="p">,</span> <span class="s1">&#39;Recall&#39;</span><span class="p">,</span> <span class="s1">&#39;Precision&#39;</span><span class="p">,</span> <span class="s1">&#39;f1&#39;</span><span class="p">))</span>
+    <span class="n">acc</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">recall</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">prec</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">f1</span> <span class="o">=</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:&gt;20}</span><span class="se">\t</span><span class="si">{:&gt;1.8f}</span><span class="se">\t</span><span class="si">{:&gt;1.8f}</span><span class="se">\t</span><span class="si">{:&gt;1.6f}</span><span class="se">\t</span><span class="si">{:&gt;1.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">name</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="n">recall</span><span class="p">,</span> <span class="n">prec</span><span class="p">,</span> <span class="n">f1</span>
+    <span class="p">))</span>
+</pre></div>
+
+
+<h2>Enseble</h2>
+<div class="highlight"><pre><span></span><span class="n">y_preds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">([</span><span class="n">clfs</span><span class="p">[</span><span class="n">_</span><span class="p">][</span><span class="s1">&#39;predictions&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">clfs</span><span class="p">])</span>
+<span class="n">enseble_preds</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+
+
+<h2>Hard Voting</h2>
+<p>This is one of the simplest way to combine multiple models in order to generalize better and achive better performance.</p>
+<div class="highlight"><pre><span></span><span class="n">hard_vot</span> <span class="o">=</span> <span class="n">EnsembleVoteClassifier</span><span class="p">([</span><span class="n">clfs</span><span class="p">[</span><span class="n">_</span><span class="p">][</span><span class="s1">&#39;model&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">clfs</span><span class="p">],</span> <span class="n">refit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">hard_vot</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="n">enseble_preds</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">hard_vot</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">),</span> <span class="s1">&#39;Hard Voting&#39;</span><span class="p">))</span>
+</pre></div>
+
+
+<h2>Weighted Hard Voting</h2>
+<p>Using weighted hard voting you can take advantage of most powerfull models</p>
+<div class="highlight"><pre><span></span><span class="n">wei_hard_vot</span> <span class="o">=</span> <span class="n">EnsembleVoteClassifier</span><span class="p">([</span><span class="n">clfs</span><span class="p">[</span><span class="n">_</span><span class="p">][</span><span class="s1">&#39;model&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">clfs</span><span class="p">],</span> <span class="n">weights</span><span class="o">=</span><span class="p">[</span>
+        <span class="mf">0.4</span><span class="p">,</span>
+        <span class="mf">0.1</span><span class="p">,</span>
+        <span class="mf">0.8</span>
+    <span class="p">],</span> <span class="n">refit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">wei_hard_vot</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="n">enseble_preds</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">wei_hard_vot</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">),</span> <span class="s1">&#39;Weighted Hard Voting&#39;</span><span class="p">))</span>
+</pre></div>
+
+
+<h2>Blending</h2>
+<p>We are going to use the predictions as training dataset.</p>
+<div class="highlight"><pre><span></span><span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
+
+<span class="n">x_tr_ens</span><span class="p">,</span> <span class="n">x_ts_ens</span><span class="p">,</span> <span class="n">y_tr_ens</span><span class="p">,</span> <span class="n">y_ts_ens</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">y_preds</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=.</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_tr_ens</span><span class="p">,</span> <span class="n">y_tr_ens</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="err">RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,</span>
+<span class="err">                       criterion=&#39;gini&#39;, max_depth=None, max_features=&#39;auto&#39;,</span>
+<span class="err">                       max_leaf_nodes=None, max_samples=None,</span>
+<span class="err">                       min_impurity_decrease=0.0, min_impurity_split=None,</span>
+<span class="err">                       min_samples_leaf=1, min_samples_split=2,</span>
+<span class="err">                       min_weight_fraction_leaf=0.0, n_estimators=100,</span>
+<span class="err">                       n_jobs=None, oob_score=False, random_state=None,</span>
+<span class="err">                       verbose=0, warm_start=False)</span>
+</pre></div>
+
+
+<h1>Evaluation</h1>
+<p>It's crusial to detect fraudulent transactions, therefor a significat evaluation metric could the <code>simplicity</code>. For every trained method and ensebling method the following evaluation metrics will be calculated:
+ - Accuracy
+ - Recall
+ - Precision
+ - f1 Score</p>
+<div class="highlight"><pre><span></span><span class="n">print_header</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">clfs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">print_eval_metrics</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;predictions&#39;</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">],</span> <span class="n">print_header</span><span class="p">)</span>
+    <span class="n">print_header</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">prds</span><span class="p">,</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">enseble_preds</span><span class="p">:</span>
+    <span class="n">print_eval_metrics</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">prds</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">print_header</span><span class="p">)</span>
+    <span class="n">print_header</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="n">print_eval_metrics</span><span class="p">(</span>
+    <span class="n">y_ts_ens</span><span class="p">,</span>
+    <span class="n">rf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_ts_ens</span><span class="p">),</span>
+    <span class="s1">&#39;Bleding using RF&#39;</span><span class="p">,</span> <span class="kc">False</span>
+<span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>            <span class="n">Algorith</span>      <span class="n">Accuracy</span>      <span class="n">Recall</span>  <span class="k">Precision</span>      <span class="n">f1</span>
+    <span class="k">Isolation</span> <span class="n">Forest</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">90243902</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">84146341</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">958333</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">896</span>
+        <span class="n">OneClass</span> <span class="n">SVM</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">87398374</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">93699187</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">832130</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">881</span>
+          <span class="n">Autoncoder</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">89735772</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">88008130</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">911579</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">896</span>
+
+
+         <span class="n">Hard</span> <span class="n">Voting</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">90142276</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">88211382</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">917548</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">899</span>
+<span class="n">Weighted</span> <span class="n">Hard</span> <span class="n">Voting</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">89735772</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">88008130</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">911579</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">896</span>
+
+
+    <span class="n">Bleding</span> <span class="k">using</span> <span class="n">RF</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">90243902</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">83196721</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">966667</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">894</span>
+</pre></div>
+
+
+<h1>Resources</h1>
+<ol>
+<li>Outlier Detection with One-Class SVMs <a href="https://towardsdatascience.com/outlier-detection-with-one-class-svms-5403a1a1878c">url</a></li>
+<li>Niu, X., Wang, L., &amp; Yang, X. (2019). A comparison study of credit card fraud detection: Supervised versus unsupervised. arXiv preprint arXiv:1904.10604. <a href="https://arxiv.org/abs/1904.10604">url</a> <a href="https://arxiv.org/pdf/1904.10604">pdf</a></li>
+<li>Benefits of Anomaly Detection Using Isolation Forests <a href="https://blog.easysol.net/using-isolation-forests-anamoly-detection/">url</a></li>
+<li>scikit-learn: Voting Classifier <a href="https://scikit-learn.org/stable/modules/ensemble.html#voting-classifier">url</a></li>
+<li>scikit-learn: Novelty and Outlier Detection <a href="https://scikit-learn.org/stable/modules/outlier_detection.html#outlier-detection">url</a></li>
+<li>Building Autoencoders in Keras <a href="https://blog.keras.io/building-autoencoders-in-keras.html">url</a></li>
+<li>Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. Deep learning. MIT press, 2016. <a href="https://www.deeplearningbook.org/">url</a></li>
+<li>Porwal, Utkarsh, and Smruthi Mukund. "Credit card fraud detection in e-commerce: An outlier detection approach." arXiv preprint arXiv:1811.02196 (2018). <a href="https://arxiv.org/abs/1811.02196">url</a></li>
+</ol>
+      </div><!-- .entry-content -->
+      <br /><br />
+      <div class="article_meta">
+        Tags:
+          <a href="/tag/python.html">python</a>,          <a href="/tag/machine-learning.html">machine learning</a>,          <a href="/tag/deep-learning.html">deep learning</a>      </div>
+    </div>
+  </div>
+</article><!-- #post-## -->
+                </div>
+              </div><!-- #main -->
+          </div><!-- #primary -->
+        </div>
+      </div><!-- close .row -->
+    </div><!-- close .container -->
+  </div><!-- close .site-content -->
+
+
+
+
+  <div id="footer-area">
+    <footer id="colophon" class="site-footer" role="contentinfo">
+      <div class="site-info container">
+        <div class="row">
+                    <div class="copyright col-md-12">
+                    <a href="/pages/privacy-policy">Privacy Policy</a> | 
+                    <a href="/pages/terms-and-conditions">Terms & Conditions</a><br />
+                    This site uses the <a href="https://github.com/limbenjamin/voce">voce</a> theme by <a href="//limbenjamin.com/">Benjamin Lim</a><br />
+                    &copy; 2020 <a href="">Panagiotis Simakis</a> </div>
+        </div>
+      </div><!-- .site-info -->
+      <div class="scroll-to-top" style="display: none;"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+    </footer><!-- #colophon -->
+  </div>
+
+  <script type="text/javascript">
+    window.addEventListener('load', function(){
+    if (window.location.pathname != '/' && window.location.pathname != '/index.html'){
+      window.scroll(0, document.getElementById('main').offsetTop);
+    }})
+  </script>
+
+
+
+
+</body>
+</html>
