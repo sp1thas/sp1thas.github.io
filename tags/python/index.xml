@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on Panagiotis Simakis</title>
-    <link>/tags/python/</link>
+    <link>simakis.me/tags/python/</link>
     <description>Recent content in python on Panagiotis Simakis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Panagiotis Simakis</copyright>
     <lastBuildDate>Thu, 06 Aug 2020 15:24:09 +0200</lastBuildDate>
     
-	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="simakis.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Store images efficiently in scrapy using folder structure</title>
-      <link>/posts/scrapy-store-images-efficiently-using-folder-structure/</link>
+      <link>simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</link>
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
       
-      <guid>/posts/scrapy-store-images-efficiently-using-folder-structure/</guid>
+      <guid>simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</guid>
       <description>How to employ folder structure as an efficient and easy way to store large number of images using scrapy pipelines</description>
     </item>
     
     <item>
       <title>Semi-Supervised Fraud Detection</title>
-      <link>/posts/semi-supervised-fraud-detection/</link>
+      <link>simakis.me/posts/semi-supervised-fraud-detection/</link>
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
-      <guid>/posts/semi-supervised-fraud-detection/</guid>
+      <guid>simakis.me/posts/semi-supervised-fraud-detection/</guid>
       <description>A jupyter notebook about semi-supervised fraud detection.</description>
     </item>
     
     <item>
       <title>Book Depository Dataset EDA</title>
-      <link>/posts/introduction-to-book-depository-dataset/</link>
+      <link>simakis.me/posts/introduction-to-book-depository-dataset/</link>
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
-      <guid>/posts/introduction-to-book-depository-dataset/</guid>
+      <guid>simakis.me/posts/introduction-to-book-depository-dataset/</guid>
       <description>This notebook introduces the Book Depository Dataset and extracts some useful insights.</description>
     </item>
     
