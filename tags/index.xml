@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Panagiotis Simakis</title>
-    <link>sp1thas.github.io/tags/</link>
+    <link>simakis.me/tags/</link>
     <description>Recent content in Tags on Panagiotis Simakis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Panagiotis Simakis</copyright>
     <lastBuildDate>Sat, 02 Jan 2021 15:24:09 +0200</lastBuildDate>
     
-	<atom:link href="sp1thas.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="simakis.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>dropbox</title>
-      <link>sp1thas.github.io/tags/dropbox/</link>
+      <link>simakis.me/tags/dropbox/</link>
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
-      <guid>sp1thas.github.io/tags/dropbox/</guid>
+      <guid>simakis.me/tags/dropbox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ignore-file</title>
-      <link>sp1thas.github.io/tags/ignore-file/</link>
+      <link>simakis.me/tags/ignore-file/</link>
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
-      <guid>sp1thas.github.io/tags/ignore-file/</guid>
+      <guid>simakis.me/tags/ignore-file/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shell</title>
-      <link>sp1thas.github.io/tags/shell/</link>
+      <link>simakis.me/tags/shell/</link>
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
-      <guid>sp1thas.github.io/tags/shell/</guid>
+      <guid>simakis.me/tags/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>sp1thas.github.io/tags/python/</link>
+      <link>simakis.me/tags/python/</link>
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
       
-      <guid>sp1thas.github.io/tags/python/</guid>
+      <guid>simakis.me/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>scrapy</title>
-      <link>sp1thas.github.io/tags/scrapy/</link>
+      <link>simakis.me/tags/scrapy/</link>
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
       
-      <guid>sp1thas.github.io/tags/scrapy/</guid>
+      <guid>simakis.me/tags/scrapy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>deep learning</title>
-      <link>sp1thas.github.io/tags/deep-learning/</link>
+      <link>simakis.me/tags/deep-learning/</link>
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
-      <guid>sp1thas.github.io/tags/deep-learning/</guid>
+      <guid>simakis.me/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>machine learning</title>
-      <link>sp1thas.github.io/tags/machine-learning/</link>
+      <link>simakis.me/tags/machine-learning/</link>
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
-      <guid>sp1thas.github.io/tags/machine-learning/</guid>
+      <guid>simakis.me/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dataset</title>
-      <link>sp1thas.github.io/tags/dataset/</link>
+      <link>simakis.me/tags/dataset/</link>
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
-      <guid>sp1thas.github.io/tags/dataset/</guid>
+      <guid>simakis.me/tags/dataset/</guid>
       <description></description>
     </item>
     
     <item>
       <title>eda</title>
-      <link>sp1thas.github.io/tags/eda/</link>
+      <link>simakis.me/tags/eda/</link>
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
-      <guid>sp1thas.github.io/tags/eda/</guid>
+      <guid>simakis.me/tags/eda/</guid>
       <description></description>
     </item>
     
