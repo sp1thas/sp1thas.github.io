@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Panagiotis Simakis</title>
-    <link>simakis.me/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Panagiotis Simakis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Panagiotis Simakis</copyright>
     <lastBuildDate>Sat, 02 Jan 2021 15:24:09 +0200</lastBuildDate>
     
-	<atom:link href="simakis.me/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>dropbox</title>
-      <link>simakis.me/tags/dropbox/</link>
+      <link>/tags/dropbox/</link>
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
-      <guid>simakis.me/tags/dropbox/</guid>
+      <guid>/tags/dropbox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ignore-file</title>
-      <link>simakis.me/tags/ignore-file/</link>
+      <link>/tags/ignore-file/</link>
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
-      <guid>simakis.me/tags/ignore-file/</guid>
+      <guid>/tags/ignore-file/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shell</title>
-      <link>simakis.me/tags/shell/</link>
+      <link>/tags/shell/</link>
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
-      <guid>simakis.me/tags/shell/</guid>
+      <guid>/tags/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>simakis.me/tags/python/</link>
+      <link>/tags/python/</link>
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
       
-      <guid>simakis.me/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>scrapy</title>
-      <link>simakis.me/tags/scrapy/</link>
+      <link>/tags/scrapy/</link>
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
       
-      <guid>simakis.me/tags/scrapy/</guid>
+      <guid>/tags/scrapy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>deep learning</title>
-      <link>simakis.me/tags/deep-learning/</link>
+      <link>/tags/deep-learning/</link>
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
-      <guid>simakis.me/tags/deep-learning/</guid>
+      <guid>/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>machine learning</title>
-      <link>simakis.me/tags/machine-learning/</link>
+      <link>/tags/machine-learning/</link>
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
-      <guid>simakis.me/tags/machine-learning/</guid>
+      <guid>/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dataset</title>
-      <link>simakis.me/tags/dataset/</link>
+      <link>/tags/dataset/</link>
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
-      <guid>simakis.me/tags/dataset/</guid>
+      <guid>/tags/dataset/</guid>
       <description></description>
     </item>
     
     <item>
       <title>eda</title>
-      <link>simakis.me/tags/eda/</link>
+      <link>/tags/eda/</link>
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
-      <guid>simakis.me/tags/eda/</guid>
+      <guid>/tags/eda/</guid>
       <description></description>
     </item>
     
