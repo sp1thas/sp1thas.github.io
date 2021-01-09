@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Panagiotis Simakis</title>
-    <link>https://simakis.me/</link>
+    <link>sp1thas.github.io/</link>
     <description>Recent content on Panagiotis Simakis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Panagiotis Simakis</copyright>
     <lastBuildDate>Sat, 02 Jan 2021 15:24:09 +0200</lastBuildDate>
     
-	<atom:link href="https://simakis.me/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="sp1thas.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>dropboxignore</title>
-      <link>https://simakis.me/posts/dropboxignore/</link>
+      <link>sp1thas.github.io/posts/dropboxignore/</link>
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
-      <guid>https://simakis.me/posts/dropboxignore/</guid>
+      <guid>sp1thas.github.io/posts/dropboxignore/</guid>
       <description>it&amp;rsquo;s all about the missing .dropboxignore file.</description>
     </item>
     
     <item>
       <title>Store images efficiently in scrapy using folder structure</title>
-      <link>https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</link>
+      <link>sp1thas.github.io/posts/scrapy-store-images-efficiently-using-folder-structure/</link>
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
       
-      <guid>https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</guid>
+      <guid>sp1thas.github.io/posts/scrapy-store-images-efficiently-using-folder-structure/</guid>
       <description>How to employ folder structure as an efficient and easy way to store large number of images using scrapy pipelines</description>
     </item>
     
     <item>
       <title>Semi-Supervised Fraud Detection</title>
-      <link>https://simakis.me/posts/semi-supervised-fraud-detection/</link>
+      <link>sp1thas.github.io/posts/semi-supervised-fraud-detection/</link>
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
-      <guid>https://simakis.me/posts/semi-supervised-fraud-detection/</guid>
+      <guid>sp1thas.github.io/posts/semi-supervised-fraud-detection/</guid>
       <description>A jupyter notebook about semi-supervised fraud detection.</description>
     </item>
     
     <item>
       <title>Book Depository Dataset EDA</title>
-      <link>https://simakis.me/posts/introduction-to-book-depository-dataset/</link>
+      <link>sp1thas.github.io/posts/introduction-to-book-depository-dataset/</link>
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
-      <guid>https://simakis.me/posts/introduction-to-book-depository-dataset/</guid>
+      <guid>sp1thas.github.io/posts/introduction-to-book-depository-dataset/</guid>
       <description>This notebook introduces the Book Depository Dataset and extracts some useful insights.</description>
     </item>
     
