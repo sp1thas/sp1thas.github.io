@@ -6,10 +6,6 @@
     <description>Recent content in Categories on Panagiotis Simakis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Panagiotis Simakis</copyright>
-    
-	<atom:link href="https://simakis.me/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>Panagiotis Simakis</copyright><atom:link href="https://simakis.me/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

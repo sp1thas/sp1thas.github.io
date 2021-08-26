@@ -11,9 +11,10 @@
   <meta property="og:title" content="Store images efficiently in scrapy using folder structure" />
 <meta property="og:description" content="How to employ folder structure as an efficient and easy way to store large number of images using scrapy pipelines" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/" />
+<meta property="og:url" content="https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-08-06T15:24:09+02:00" />
 <meta property="article:modified_time" content="2020-08-06T15:24:09+02:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Store images efficiently in scrapy using folder structure"/>
@@ -24,7 +25,7 @@
     
   
   
-  <link rel="stylesheet" href="https://simakis.me/css/style-classic.css">
+  <link rel="stylesheet" href="https://simakis.me/css/style-white.css">
   
   
   
@@ -60,7 +61,9 @@
          
         <li><a href="/tags">Tags</a></li>
          
-        <li><a href="/simakis_cv.pdf">Résumé 💾</a></li>
+        <li><a href="/contact">Contact</a></li>
+         
+        <li><a href="/cv.pdf">CV</a></li>
         
       </ul>
     </span>
@@ -219,7 +222,7 @@
       <h2 id="introduction">Introduction</h2>
 <h3 id="what-is-the-problem-and-how-deal-with-it">What is the problem and how deal with it</h3>
 <p>When it comes to image storing, a common pitfall is to save all the images in a single folder. If the number of images is less than few thousands, when, stop reading this post because you will not face any issue. On the other hand, if you are planing to store numerous images, then consider splitting them in different folders. Listing a directory will become faster, more efficient and at the end of the day, your kernel will be happier. A common pattern is to create a folder structure based on the name of every file. For example, let’s say that <code>path/to/image/dir</code> will be the main directory, and you want to store <code>imagefile.jpg</code>. Create folder structure based on file’s characters and save the file inside the leaf folder:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ tree path/to/image/dir
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ tree path/to/image/dir
 path/to/image/dir
 └── i
     └── m
@@ -288,7 +291,9 @@ path/to/image/dir
          
           <li><a href="/tags">Tags</a></li>
          
-          <li><a href="/simakis_cv.pdf">Résumé 💾</a></li>
+          <li><a href="/contact">Contact</a></li>
+         
+          <li><a href="/cv.pdf">CV</a></li>
         
       </ul>
     </div>
@@ -409,7 +414,9 @@ path/to/image/dir
          
         <li><a href="/tags">Tags</a></li>
          
-        <li><a href="/simakis_cv.pdf">Résumé 💾</a></li>
+        <li><a href="/contact">Contact</a></li>
+         
+        <li><a href="/cv.pdf">CV</a></li>
         
       </ul>
     </nav>
