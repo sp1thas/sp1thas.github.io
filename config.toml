@@ -92,5 +92,8 @@ weight = 4
     name = "stack-exchange"
     link = "https://stackexchange.com/users/9110235/panagiotis-simakis"
   [[params.social]]
+    name = "keybase"
+    link = "https://keybase.io/spithas"
+  [[params.social]]
     name = "dev"
     link = "https://dev.to/sp1thas"
