@@ -12,7 +12,7 @@ hugo -d docs # if using a theme, replace with `hugo -t <YOURTHEME>`
 git add .
 
 # Commit changes.
-msg="rebuilding site $(date)"
+LC_TIME=en_US.utf8 msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi
