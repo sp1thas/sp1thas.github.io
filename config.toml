@@ -22,14 +22,9 @@ url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "Tags"
-url = "/tags"
+name = "Curriculum Vitae"
+url = "/cv"
 weight = 3
-
-[[menu.main]]
-name = "CV"
-url = "/cv.pdf"
-weight = 4
 
 [[menu.main]]
 name = "Contact"

@@ -1,3 +1,8 @@
+---
+title: Contact form
+summary: Get in touch using this contact form.
+---
+
 ## Contact form
 
 Feel free to drop a line using the following contact form.
