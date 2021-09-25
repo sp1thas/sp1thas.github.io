@@ -7,7 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Panagiotis Simakis</copyright>
-    <lastBuildDate>Thu, 06 Aug 2020 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Aug 2020 15:24:09 +0200</lastBuildDate>
+    
+	<atom:link href="https://simakis.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Store images efficiently in scrapy using folder structure</title>
       <link>https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</link>
