@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Panagiotis Simakis</copyright>
-    <lastBuildDate>Mon, 30 Mar 2020 15:24:09 +0200</lastBuildDate>
-    
-	<atom:link href="https://simakis.me/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 30 Mar 2020 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Semi-Supervised Fraud Detection</title>
       <link>https://simakis.me/posts/semi-supervised-fraud-detection/</link>
