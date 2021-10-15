@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Panagiotis Simakis</title>
+    <link>https://simakis.me/tags/</link>
+    <description>Recent content in Tags on Panagiotis Simakis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Panagiotis Simakis</copyright>
+    <lastBuildDate>Sat, 02 Jan 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dropbox</title>
+      <link>https://simakis.me/tags/dropbox/</link>
+      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/dropbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ignore-file</title>
+      <link>https://simakis.me/tags/ignore-file/</link>
+      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/ignore-file/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://simakis.me/tags/shell/</link>
+      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://simakis.me/tags/python/</link>
+      <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scrapy</title>
+      <link>https://simakis.me/tags/scrapy/</link>
+      <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/scrapy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deep learning</title>
+      <link>https://simakis.me/tags/deep-learning/</link>
+      <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>https://simakis.me/tags/machine-learning/</link>
+      <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dataset</title>
+      <link>https://simakis.me/tags/dataset/</link>
+      <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/dataset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eda</title>
+      <link>https://simakis.me/tags/eda/</link>
+      <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/eda/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shell on Panagiotis Simakis</title>
+    <link>https://simakis.me/tags/shell/</link>
+    <description>Recent content in shell on Panagiotis Simakis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Panagiotis Simakis</copyright>
+    <lastBuildDate>Sat, 02 Jan 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dropboxignore</title>
+      <link>https://simakis.me/posts/dropboxignore/</link>
+      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/posts/dropboxignore/</guid>
+      <description>it&amp;rsquo;s all about the missing .dropboxignore file.</description>
+    </item>
+    
+  </channel>
+</rss>
