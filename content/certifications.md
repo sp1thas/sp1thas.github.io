@@ -1,3 +1,7 @@
+---
+title: Certifications & Conferences
+---
+
 # Certifications & Conferences
 
 | | | | |
