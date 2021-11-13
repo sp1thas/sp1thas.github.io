@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Panagiotis Simakis</copyright>
-    <lastBuildDate>Sat, 02 Jan 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Nov 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>prefect</title>
+      <link>https://simakis.me/tags/prefect/</link>
+      <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/prefect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sphinx</title>
+      <link>https://simakis.me/tags/sphinx/</link>
+      <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/sphinx/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>dropbox</title>
       <link>https://simakis.me/tags/dropbox/</link>
