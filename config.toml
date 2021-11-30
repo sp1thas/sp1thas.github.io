@@ -27,6 +27,11 @@ url = "/cv"
 weight = 3
 
 [[menu.main]]
+name = "Contributions"
+url = "/contributions"
+weight = 4
+
+[[menu.main]]
 name = "Contact"
 url = "/contact"
 weight = 4
