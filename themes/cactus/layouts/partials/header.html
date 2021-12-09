@@ -6,6 +6,7 @@
     <div id="logo" style="background-image: url({{ .Site.Params.logo | absURL }})"></div>
   {{ else }}
     <div id="logo" style="background-image: url({{ "images/logo.png" | absURL }})"></div>
+    <img src={{ "images/logo.png" | absURL }} style="width: 0px;"></img>
   {{ end}}
   <div id="title">
     <h1>{{ .Site.Title }}</h1>
