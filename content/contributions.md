@@ -5,6 +5,7 @@ summary: My F/OSS Contributions
 
 ## My F/OSS Contributions
 
+ - `nltk/nltk`: [PR #2910 · Fix `FileNotFoundError` when the `download_dir` is a non-existing nested folder](https://github.com/nltk/nltk/pull/2910)
  - `jazzband/django-auditlog`: [PR #295 · Replace deprecated smart_text() with smart_str()](https://github.com/jazzband/django-auditlog/pull/295)
  - `PrefectHQ/prefect`: 
    - [PR #3729 · Support passing `helper_script` to `ShellTask`/`DBTShellTask` at runtime](https://github.com/PrefectHQ/prefect/pull/3729) 
