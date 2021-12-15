@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://simakis.me/posts/sphinx-prefect/</loc>
+    <lastmod>2021-11-12T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/</loc>
+    <lastmod>2021-11-12T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/posts/</loc>
+    <lastmod>2021-11-12T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/tags/prefect/</loc>
+    <lastmod>2021-11-12T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/tags/sphinx/</loc>
+    <lastmod>2021-11-12T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/tags/</loc>
+    <lastmod>2021-11-12T15:24:09+02:00</lastmod>
+  </url><url>
     <loc>https://simakis.me/tags/dropbox/</loc>
     <lastmod>2021-01-02T15:24:09+02:00</lastmod>
   </url><url>
@@ -11,16 +29,7 @@
     <loc>https://simakis.me/tags/ignore-file/</loc>
     <lastmod>2021-01-02T15:24:09+02:00</lastmod>
   </url><url>
-    <loc>https://simakis.me/</loc>
-    <lastmod>2021-01-02T15:24:09+02:00</lastmod>
-  </url><url>
-    <loc>https://simakis.me/posts/</loc>
-    <lastmod>2021-01-02T15:24:09+02:00</lastmod>
-  </url><url>
     <loc>https://simakis.me/tags/shell/</loc>
-    <lastmod>2021-01-02T15:24:09+02:00</lastmod>
-  </url><url>
-    <loc>https://simakis.me/tags/</loc>
     <lastmod>2021-01-02T15:24:09+02:00</lastmod>
   </url><url>
     <loc>https://simakis.me/tags/python/</loc>
@@ -57,5 +66,7 @@
     <loc>https://simakis.me/contact/</loc>
   </url><url>
     <loc>https://simakis.me/cv/</loc>
+  </url><url>
+    <loc>https://simakis.me/contributions/</loc>
   </url>
 </urlset>

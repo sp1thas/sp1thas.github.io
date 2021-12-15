@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Panagiotis Simakis</copyright>
-    <lastBuildDate>Sat, 02 Jan 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Nov 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add prefect flow visualizations into a Sphinx project</title>
+      <link>https://simakis.me/posts/sphinx-prefect/</link>
+      <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/posts/sphinx-prefect/</guid>
+      <description>This article demonstrates an easy way to add your prefect flow visualizations into your sphinx documentation using the &lt;code&gt;sphinxcontrib-prefectviz&lt;/code&gt; plugin.</description>
+    </item>
+    
     <item>
       <title>dropboxignore</title>
       <link>https://simakis.me/posts/dropboxignore/</link>

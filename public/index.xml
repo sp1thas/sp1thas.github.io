@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Panagiotis Simakis</copyright>
-    <lastBuildDate>Sat, 02 Jan 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Nov 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add prefect flow visualizations into a Sphinx project</title>
+      <link>https://simakis.me/posts/sphinx-prefect/</link>
+      <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/posts/sphinx-prefect/</guid>
+      <description>This article demonstrates an easy way to add your prefect flow visualizations into your sphinx documentation using the &lt;code&gt;sphinxcontrib-prefectviz&lt;/code&gt; plugin.</description>
+    </item>
+    
     <item>
       <title>dropboxignore</title>
       <link>https://simakis.me/posts/dropboxignore/</link>
@@ -50,7 +59,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://simakis.me/certifications/</guid>
-      <description>Certifications &amp;amp; Conferences            10/2021 Architecting with Google Kubernetes Engine: Foundations Coursera cert   10/2021 Google Cloud Fundamentals: Core Infrastructure Coursera cert   10/2020 AWS Fundamentals Specialization Coursera cert   04/2020 Programming Foundations: Web Security LinkedIn Learning cert   02/2020 Applied Text Mining in Python Coursera cert   02/2020 Sequences, Time Series and Prediction Coursera cert   03/2019 Oπe\n conference Athens, Greece cert   12/2017 Spark and Python for Big Data with PySpark Udemy cert   11/2017 2th DevOps Conference 2017 Athens, Greece    11/2017 10th Conference of Free &amp;amp; Open Source Software Communities Athens, Greece    04/2017 Solr 101 Cognitive Class cert   05/2011 4th Conference of Free &amp;amp; Open Source Software Communities Patras, Greece     </description>
+      <description>Certifications &amp;amp; Conferences            10/2021 Architecting with Google Kubernetes Engine: Foundations Coursera cert   10/2021 Google Cloud Fundamentals: Core Infrastructure Coursera cert   10/2020 AWS Fundamentals Specialization Coursera cert   04/2020 Programming Foundations: Web Security LinkedIn Learning cert   02/2020 Applied Text Mining in Python Coursera cert   02/2020 Sequences, Time Series and Prediction Coursera cert   03/2019 Oπe\n conference Athens, Greece cert   12/2017 Spark and Python for Big Data with PySpark Udemy cert   11/2017 2th DevOps Conference 2017 Athens, Greece cert   11/2017 10th Conference of Free &amp;amp; Open Source Software Communities Athens, Greece    04/2017 Solr 101 Cognitive Class cert   05/2011 4th Conference of Free &amp;amp; Open Source Software Communities Patras, Greece     </description>
     </item>
     
     <item>
@@ -69,6 +78,15 @@
       
       <guid>https://simakis.me/cv/</guid>
       <description>Here you can find my CV</description>
+    </item>
+    
+    <item>
+      <title>F/OSS Contributions</title>
+      <link>https://simakis.me/contributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://simakis.me/contributions/</guid>
+      <description>My F/OSS Contributions</description>
     </item>
     
   </channel>
