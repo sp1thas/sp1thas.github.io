@@ -6,6 +6,7 @@ title: Certifications & Conferences
 
 | | | |                                                                                                  |
 |---|---|---|--------------------------------------------------------------------------------------------------|
+| 12/2021 | Introduction to Machine Learning in Production | Coursera | [cert](https://www.coursera.org/account/accomplishments/certificate/BBQFVYDQWYJC) |
 | 10/2021 | Architecting with Google Kubernetes Engine: Foundations | Coursera | [cert](https://www.coursera.org/account/accomplishments/certificate/M4T82GMTA8CQ)                
 | 10/2021 | Google Cloud Fundamentals: Core Infrastructure | Coursera | [cert](https://www.coursera.org/account/accomplishments/certificate/FPS6S3H94SXK)                |
 | 10/2020 | AWS Fundamentals Specialization | Coursera | [cert](https://www.coursera.org/account/accomplishments/specialization/certificate/MDVJ7N8CRQKL) |
