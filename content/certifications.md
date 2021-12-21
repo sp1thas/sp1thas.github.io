@@ -7,7 +7,7 @@ title: Certifications & Conferences
 |         |                                                            |                   |                                                                                                  |
 |---------|------------------------------------------------------------|-------------------|--------------------------------------------------------------------------------------------------|
 | 12/2021 | Architecting with Google Kubernetes Engine: Workloads      | Coursera          | [cert](https://www.coursera.org/account/accomplishments/certificate/C58KT96TSTM2)                |
-| 12/2021 | Introduction to Kubeflow: Fundamentals                     | Arrikto           | [cert](/certifications/kubuflow-intro-2021.pdf)                                                  |
+| 12/2021 | Introduction to Kubeflow: Fundamentals                     | Arrikto           | [cert](/certifications/kubeflow-intro-2021.pdf)                                                  |
 | 12/2021 | Introduction to Machine Learning in Production             | Coursera          | [cert](https://www.coursera.org/account/accomplishments/certificate/BBQFVYDQWYJC)                |
 | 10/2021 | Architecting with Google Kubernetes Engine: Foundations    | Coursera          | [cert](https://www.coursera.org/account/accomplishments/certificate/M4T82GMTA8CQ)                |
 | 10/2021 | Google Cloud Fundamentals: Core Infrastructure             | Coursera          | [cert](https://www.coursera.org/account/accomplishments/certificate/FPS6S3H94SXK)                |
