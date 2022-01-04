@@ -11,7 +11,7 @@ keywords:
  - sphinx
  - documentation
  - visualization
-summary: This article demonstrates an easy way to add your prefect flow visualizations into your sphinx documentation using the `sphinxcontrib-prefectviz` plugin.
+description: This article demonstrates an easy way to add your prefect flow visualizations into your sphinx documentation using the `sphinxcontrib-prefectviz` plugin.
 ---
 
 This article demonstrates an easy way (hopefully) to add your prefect flow visualizations into your sphinx documentation using the [sphinxcontrib-prefectviz][1] plugin.

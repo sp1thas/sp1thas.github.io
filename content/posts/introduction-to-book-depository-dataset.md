@@ -10,7 +10,7 @@ tags:
 keywords:
     - book depository dataset
     - python eda
-summary: This notebook introduces the Book Depository Dataset and extracts some useful insights.
+description: This notebook introduces the Book Depository Dataset and extracts some useful insights.
 ---
 
 kaggle dataset: [Book Depository Dataset](https://www.kaggle.com/sp1thas/book-depository-dataset)

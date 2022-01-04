@@ -14,7 +14,7 @@ keywords:
     - pipelines
     - image storing
     - scrapy images folder structure
-summary: How to employ folder structure as an efficient and easy way to store large number of images using scrapy pipelines
+description: How to employ folder structure as an efficient and easy way to store large number of images using scrapy pipelines
 ---
 ## Introduction
 

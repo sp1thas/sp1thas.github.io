@@ -13,7 +13,7 @@ keywords:
  - ensemble
  - learning representation
  - semi-supervised learning
-summary: A jupyter notebook about semi-supervised fraud detection.
+description: A jupyter notebook about semi-supervised fraud detection.
 ---
 
 <iframe src="https://www.kaggle.com/embed/sp1thas/semi-supervised-fraud-detection?kernelSessionId=51427191" height="800" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="Semi-Supervised Fraud Detection"></iframe>
