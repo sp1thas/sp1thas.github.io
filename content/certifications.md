@@ -1,5 +1,6 @@
 ---
 title: Certifications & Conferences
+description: The list of my certifications.
 ---
 
 # Certifications & Conferences

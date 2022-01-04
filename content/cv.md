@@ -1,6 +1,6 @@
 ---
 title: Curriculum Vitae
-summary: Here you can find my CV
+description: My CV
 ---
 
 # Curriculum Vitae

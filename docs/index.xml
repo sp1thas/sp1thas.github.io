@@ -73,7 +73,8 @@ import pandas as pd import os import json from glob import glob import matplotli
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://simakis.me/contact/</guid>
-      <description>Get in touch using this contact form.</description>
+      <description>Contact form Feel free to drop a line using the following contact form.
+  Send 🚀 </description>
     </item>
     
     <item>
@@ -82,7 +83,8 @@ import pandas as pd import os import json from glob import glob import matplotli
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://simakis.me/cv/</guid>
-      <description>Here you can find my CV</description>
+      <description>Curriculum Vitae Click  to download my CV.
+  #the-canvas { border: 1px solid black; direction: ltr; width: 100%; height: auto; display: none; } #paginator { display: none; text-align: center; margin-bottom: 10px; } #loadingWrapper { display: none; justify-content: center; align-items: center; width: 100%; height: 350px; } #loading { display: inline-block; width: 50px; height: 50px; border: 3px solid #d2d0d0;; border-radius: 50%; border-top-color: #383838; animation: spin 1s ease-in-out infinite; -webkit-animation: spin 1s ease-in-out infinite; } @keyframes spin { to { -webkit-transform: rotate(360deg); } } @-webkit-keyframes spin { to { -webkit-transform: rotate(360deg); } }  Previous Next &amp;nbsp; &amp;nbsp; Page:  /       window.</description>
     </item>
     
     <item>
@@ -91,7 +93,8 @@ import pandas as pd import os import json from glob import glob import matplotli
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://simakis.me/contributions/</guid>
-      <description>My F/OSS Contributions</description>
+      <description>My Contributions A list with some of my contributions to F/OSS projects.
+ nltk/nltk: PR #2910 · Fix FileNotFoundError when the download_dir is a non-existing nested folder jazzband/django-auditlog: PR #295 · Replace deprecated smart_text() with smart_str() PrefectHQ/prefect:  PR #3729 · Support passing helper_script to ShellTask/DBTShellTask at runtime PR #3612 · pass day_or croniter argument to CronClock &amp;amp; CronSchedule PR #3548 · RenameFlowRunTask: use default flow_run_id value from context PR #3522 · specify slack webhook_secret on runtime PR #3479 · explicit exception chaining for spacy tasks PR #3460 · S3List filtering using the LastModified  PR #3072 · Ignore calls to flow.</description>
     </item>
     
   </channel>

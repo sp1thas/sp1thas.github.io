@@ -1,6 +1,6 @@
 ---
 title: Contact form
-summary: Get in touch using this contact form.
+description: Get in touch using this contact form.
 ---
 
 ## Contact form
