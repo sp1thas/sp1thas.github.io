@@ -14,16 +14,17 @@
       <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/sphinx-prefect/</guid>
-      <description>This article demonstrates an easy way to add your prefect flow visualizations into your sphinx documentation using the &lt;code&gt;sphinxcontrib-prefectviz&lt;/code&gt; plugin.</description>
+      <description>This article demonstrates an easy way (hopefully) to add your prefect flow visualizations into your sphinx documentation using the sphinxcontrib-prefectviz plugin.
+Some context Let&amp;rsquo;s say that you have implemented some pipelines using the lovely Prefect, great news so far, you chose a great tool to automate the boring stuff. Now it&amp;rsquo;s time to document your flows, a simple way to have an overview of your flows is to use the flow visualization.</description>
     </item>
     
     <item>
-      <title>dropboxignore</title>
-      <link>https://simakis.me/posts/dropboxignore/</link>
+      <title>Exclude files from your dropbox easily using dropboxignore</title>
+      <link>https://simakis.me/posts/exclude-files-using-dropboxignore/</link>
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
-      <guid>https://simakis.me/posts/dropboxignore/</guid>
-      <description>it&amp;rsquo;s all about the missing .dropboxignore file.</description>
+      <guid>https://simakis.me/posts/exclude-files-using-dropboxignore/</guid>
+      <description>The &amp;ldquo;Problem&amp;rdquo; A common issue/request about Dropbox was about ignoring files without using Selective Sync. Dropbox recently introduced the ability to ignore specific files or folders. Although the significance of the new feature, many users [ 1, 2, 3, 4] have expressed the importance of ignoring files from Dropbox using Glob just like .gitignore. For various reasons Dropbox doesn&amp;rsquo;t seem to have the will to implement such a feature :/</description>
     </item>
     
     <item>
@@ -32,7 +33,7 @@
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</guid>
-      <description>How to employ folder structure as an efficient and easy way to store large number of images using scrapy pipelines</description>
+      <description>Introduction What is the problem and how deal with it When it comes to image storing, a common pitfall is to save all the images in a single folder. If the number of images is less than few thousands, when, stop reading this post because you will not face any issue. On the other hand, if you are planing to store numerous images, then consider splitting them in different folders. Listing a directory will become faster, more efficient and at the end of the day, your kernel will be happier.</description>
     </item>
     
     <item>
@@ -41,7 +42,7 @@
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/semi-supervised-fraud-detection/</guid>
-      <description>A jupyter notebook about semi-supervised fraud detection.</description>
+      <description> </description>
     </item>
     
     <item>
@@ -50,7 +51,11 @@
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/introduction-to-book-depository-dataset/</guid>
-      <description>This notebook introduces the Book Depository Dataset and extracts some useful insights.</description>
+      <description>kaggle dataset: Book Depository Dataset
+kaggle notebook: Introduction to Book Depository Dataset
+github repo: book-depository-dataset
+Book Depository Dataset EDA Through this notebook we will try to become familiar Book Depository Dataset and extract some usefull insights. The goal of this notebook is to become an introductory step for the dataset.
+import pandas as pd import os import json from glob import glob import matplotlib.pyplot as plt import seaborn as sns %matplotlib inline Dataset Structure Files:</description>
     </item>
     
   </channel>
