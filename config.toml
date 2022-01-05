@@ -5,7 +5,6 @@ theme = "cactus"
 copyright = "Panagiotis Simakis" # cactus will use title if copyright is not set
 disqusShortname = "simakis-me" # Used when comments is enabled. Cactus will use site title if not set
 image = ""
-# googleAnalytics = "UA-1234-5"
 
 
 # summaryLength = 2
@@ -49,8 +48,8 @@ weight = 4
 [params]
 
   colortheme = "white" # dark, light, white, or classic
-  rss = true # generate rss feed. default value is false
-  googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
+  rss = false # generate rss feed. default value is false
+  googleAnalyticsAsync = false # use asynchronous tracking. Synchronous tracking by default
 
   # Home page settings
   description = "Hi there 👋 and welcome to my personal website. I'm a Software Engineer, passionate with NLP and GNU/Linux addict. "

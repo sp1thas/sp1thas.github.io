@@ -20,7 +20,7 @@
           <i class="fas fa-graduation-cap"></i>
         </a>
         {{ else }}
-        <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}">
+        <a class="icon umami--click--home-social-{{ lower $elem.name }}" target="_blank" rel="noopener" href="{{ $elem.link }}">
           <i class="fab fa-{{ lower $elem.name }}"></i>
         </a>
         {{ end }}
@@ -78,7 +78,7 @@
       {{ range (first (.Scratch.Get "count") $mainPosts) }}
         <li class="post-item">
           <div class="meta"><time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format $dataFormat }}</time></div>
-          <span><a href="{{ .Permalink }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a></span>
+          <span><a class="umami--click--home-goto-{{ lower .Title }}" href="{{ .Permalink }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a></span>
         </li>
       {{ end }}
     </ul>
@@ -101,7 +101,7 @@
     <ul class="project-list">
         {{ range .Site.Data.projects.list }}
         <li class="project-item">
-          <a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}
+          <a class="umami--click--home-project-{{ .name }}" href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}
         </li>
         {{ end }}
     </ul>

@@ -1,28 +1,30 @@
 #input-form {
   padding: 4px 7px;
   width: 100%;
-  outline: none;
-  border: solid 1px #8c8c8c;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #383838;
-  font-size: 1.2rem;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  border: solid 1px #2bbc8a;
   margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "JetBrains Mono", monospace;
+  line-height: 1.725;
+  text-rendering: geometricPrecision;
+  flex: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 #form-button {
   padding: 4px 7px;
   width: 100%;
-  outline: none;
-  border: solid 1px #8c8c8c;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #383838;
-  font-size: 1.2rem;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  border: solid 1px #2bbc8a;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "JetBrains Mono", monospace;
+  line-height: 1.725;
+  text-rendering: geometricPrecision;
+  background: #fff;
+  flex: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 #input-form:focus {
   border: solid 1px #2bbc8a;
@@ -530,13 +532,13 @@
     background-repeat: repeat-x;
   }
   .content a:hover {
-    background-image: linear-gradient(transparent, transparent 4px, #d480aa 4px, #d480aa);
+    background-image: linear-gradient(transparent, transparent 4px, #2bbc8a 4px, #2bbc8a);
   }
   .content a.icon {
     background: none;
   }
   .content a.icon:hover {
-    color: #d480aa;
+    color: #2bbc8a;
   }
   .content h1 a,
   .content .h1 a,

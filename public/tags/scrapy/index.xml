@@ -14,7 +14,7 @@
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</guid>
-      <description>How to employ folder structure as an efficient and easy way to store large number of images using scrapy pipelines</description>
+      <description>Introduction What is the problem and how deal with it When it comes to image storing, a common pitfall is to save all the images in a single folder. If the number of images is less than few thousands, when, stop reading this post because you will not face any issue. On the other hand, if you are planing to store numerous images, then consider splitting them in different folders. Listing a directory will become faster, more efficient and at the end of the day, your kernel will be happier.</description>
     </item>
     
   </channel>

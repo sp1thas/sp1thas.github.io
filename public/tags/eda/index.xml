@@ -14,7 +14,11 @@
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/introduction-to-book-depository-dataset/</guid>
-      <description>This notebook introduces the Book Depository Dataset and extracts some useful insights.</description>
+      <description>kaggle dataset: Book Depository Dataset
+kaggle notebook: Introduction to Book Depository Dataset
+github repo: book-depository-dataset
+Book Depository Dataset EDA Through this notebook we will try to become familiar Book Depository Dataset and extract some usefull insights. The goal of this notebook is to become an introductory step for the dataset.
+import pandas as pd import os import json from glob import glob import matplotlib.pyplot as plt import seaborn as sns %matplotlib inline Dataset Structure Files:</description>
     </item>
     
   </channel>
