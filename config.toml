@@ -6,7 +6,6 @@ copyright = "Panagiotis Simakis" # cactus will use title if copyright is not set
 disqusShortname = "simakis-me" # Used when comments is enabled. Cactus will use site title if not set
 image = ""
 
-
 # summaryLength = 2
 
 # Main menu which appears below site header.

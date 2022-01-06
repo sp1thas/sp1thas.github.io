@@ -15,7 +15,6 @@
   {{ $colortheme := .Scratch.Get "colortheme" }}
   <link rel="stylesheet" href="{{ $colortheme | printf "css/style-%s.css" | absURL }}">
   <!-- Custom CSS -->
-  <script async defer data-website-id="d3dca747-95bb-4c9c-9c65-426a1822e786" src="https://stats.simakis.me/umami.js"></script>
   {{ range .Site.Params.css }} <link rel="stylesheet" href="{{ . | absURL }}"> {{ end }}
   {{ `
     <!--[if lt IE 9]>
@@ -30,6 +29,17 @@
     {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
   {{ end }}
   {{ end }}
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5S9QPCJWL8"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5S9QPCJWL8');
+  </script>
   {{ if .Site.GoogleAnalytics }}
   {{ if .Site.Params.googleAnalyticsAsync }}
     {{ template "_internal/google_analytics_async.html" . }}
