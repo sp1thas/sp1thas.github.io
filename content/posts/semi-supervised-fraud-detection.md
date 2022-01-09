@@ -4,16 +4,25 @@ date: 2020-03-30T15:24:09+02:00
 draft: false
 category: posts
 tags:
-  - python
+- python
   - machine learning
   - deep learning
+
 keywords:
- - fraud detection
- - novelty detection
- - ensemble
- - learning representation
- - semi-supervised learning
+  - fraud detection
+  - novelty detection
+  - ensemble
+  - learning representation
+  - semi-supervised learning
+
 description: A jupyter notebook about semi-supervised fraud detection.
+
+cover:
+  image: "/images/post-covers/outlier.jpg"
+  alt: "outlier-image"
+  caption: "Golden Coke -- [Will Myers](https://unsplash.com/photos/ku_ttDpqIVc)"
+  relative: false
+  responsiveImages: true
 ---
 
 <iframe src="https://www.kaggle.com/embed/sp1thas/semi-supervised-fraud-detection?kernelSessionId=51427191" height="800" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="Semi-Supervised Fraud Detection"></iframe>

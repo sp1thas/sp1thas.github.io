@@ -1,10 +1,20 @@
 ---
 title: Contact form
 description: Get in touch
+ShowToc: false
+cover:
+    image: "/images/contact.jpg"
+    alt: "contact-alt"
+    caption: "Muriwai mailboxes by [Mathyas Kurmann](https://unsplash.com/photos/fb7yNPbT0l8)"
+    relative: false
+    responsiveImages: true
+    hidden: true
+ShowBreadCrumbs: false
+hideMeta: true
+disableShare: true
 ---
+
 Feel free to drop a line using the following contact form.
-
-
 
 <div id="searchbox">
     <form action="https://getform.io/f/acca828a-9b81-4ab5-9ddd-08d4315ac5bc" method="POST">

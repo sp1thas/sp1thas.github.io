@@ -5,26 +5,17 @@
     <link>https://simakis.me/tags/</link>
     <description>Recent content in Tags on Panagiotis Simakis</description>
     <image>
-      <url>https://simakis.me/papermod-cover.png</url>
-      <link>https://simakis.me/papermod-cover.png</link>
+      <url>https://simakis.me/images/home-1.jpg</url>
+      <link>https://simakis.me/images/home-1.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 12 Nov 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>prefect</title>
-      <link>https://simakis.me/tags/prefect/</link>
+      <title>prefect - sphinx</title>
+      <link>https://simakis.me/tags/prefect-sphinx/</link>
       <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
       
-      <guid>https://simakis.me/tags/prefect/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sphinx</title>
-      <link>https://simakis.me/tags/sphinx/</link>
-      <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
-      
-      <guid>https://simakis.me/tags/sphinx/</guid>
+      <guid>https://simakis.me/tags/prefect-sphinx/</guid>
       <description></description>
     </item>
     
@@ -34,6 +25,24 @@
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/tags/dropbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dropboxignore</title>
+      <link>https://simakis.me/tags/dropboxignore/</link>
+      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/dropboxignore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>glob-patterns</title>
+      <link>https://simakis.me/tags/glob-patterns/</link>
+      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/glob-patterns/</guid>
       <description></description>
     </item>
     
@@ -56,6 +65,15 @@
     </item>
     
     <item>
+      <title>wild-card</title>
+      <link>https://simakis.me/tags/wild-card/</link>
+      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/wild-card/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>python</title>
       <link>https://simakis.me/tags/python/</link>
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
@@ -74,20 +92,11 @@
     </item>
     
     <item>
-      <title>deep learning</title>
-      <link>https://simakis.me/tags/deep-learning/</link>
+      <title>python - machine learning - deep learning</title>
+      <link>https://simakis.me/tags/python-machine-learning-deep-learning/</link>
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
-      <guid>https://simakis.me/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine learning</title>
-      <link>https://simakis.me/tags/machine-learning/</link>
-      <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
-      
-      <guid>https://simakis.me/tags/machine-learning/</guid>
+      <guid>https://simakis.me/tags/python-machine-learning-deep-learning/</guid>
       <description></description>
     </item>
     

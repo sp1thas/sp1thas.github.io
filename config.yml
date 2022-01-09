@@ -49,8 +49,9 @@ params:
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
-  # disableThemeToggle: true
+  disableThemeToggle: false
   ShowShareButtons: true
+  ShareButtons: ['twitter', 'linkedin', 'reddit', 'facebook']
   ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
@@ -60,7 +61,8 @@ params:
   ShowToc: true
   comments: true
   disqusShortname: simakis-me
-  images: [ "papermod-cover.png" ]
+  images: [ "/images/home-1.jpg" ]
+  keywords: ["panagiotis simakis", "simakis", "website", "personal website", "blog", "data science", "data engineering", "machine learning", "open-source"]
 
   profileMode:
     enabled: true
@@ -73,9 +75,6 @@ params:
     imageTitle: my image
     # imageWidth: 120
     # imageHeight: 120
-    buttons:
-      - name: Posts
-        url: posts
 
   homeInfoParams:
     Title: "Panagiotis Simakis"
@@ -96,6 +95,8 @@ params:
       url: "https://github.com/sp1thas"
     - name: kaggle
       url: "https://kaggle.com/sp1thas"
+    - name: keybase
+      url: "https://keybase.io/spithas"
     - name: Rss
       url: "index.xml"
 

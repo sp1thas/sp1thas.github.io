@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>glob-patterns on Panagiotis Simakis</title>
+    <link>https://simakis.me/tags/glob-patterns/</link>
+    <description>Recent content in glob-patterns on Panagiotis Simakis</description>
+    <image>
+      <url>https://simakis.me/images/home-1.jpg</url>
+      <link>https://simakis.me/images/home-1.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 02 Jan 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/glob-patterns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exclude files from your dropbox easily using dropboxignore</title>
+      <link>https://simakis.me/posts/exclude-files-using-dropboxignore/</link>
+      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/posts/exclude-files-using-dropboxignore/</guid>
+      <description>it&amp;#39;s all about the missing .dropboxignore file. This post introduces the dropboxignore, a tool  that allow you to ignore files or folder from your dropbox using patterns.</description>
+    </item>
+    
+  </channel>
+</rss>

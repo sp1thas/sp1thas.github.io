@@ -5,8 +5,8 @@
     <link>https://simakis.me/tags/python/</link>
     <description>Recent content in python on Panagiotis Simakis</description>
     <image>
-      <url>https://simakis.me/papermod-cover.png</url>
-      <link>https://simakis.me/papermod-cover.png</link>
+      <url>https://simakis.me/images/home-1.jpg</url>
+      <link>https://simakis.me/images/home-1.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 06 Aug 2020 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
@@ -17,15 +17,6 @@
       
       <guid>https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</guid>
       <description>How to employ folder structure as an efficient and easy way to store large number of images using scrapy pipelines</description>
-    </item>
-    
-    <item>
-      <title>Semi-Supervised Fraud Detection</title>
-      <link>https://simakis.me/posts/semi-supervised-fraud-detection/</link>
-      <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
-      
-      <guid>https://simakis.me/posts/semi-supervised-fraud-detection/</guid>
-      <description>A jupyter notebook about semi-supervised fraud detection.</description>
     </item>
     
     <item>

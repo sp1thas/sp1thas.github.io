@@ -5,8 +5,8 @@
     <link>https://simakis.me/</link>
     <description>Recent content on Panagiotis Simakis</description>
     <image>
-      <url>https://simakis.me/papermod-cover.png</url>
-      <link>https://simakis.me/papermod-cover.png</link>
+      <url>https://simakis.me/images/home-1.jpg</url>
+      <link>https://simakis.me/images/home-1.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 12 Nov 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/index.xml" rel="self" type="application/rss+xml" />
@@ -25,7 +25,7 @@
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/exclude-files-using-dropboxignore/</guid>
-      <description>it&amp;#39;s all about the missing .dropboxignore file. This post introduces the dropboxignore, a tool that allow you to ignore files or folder from your dropbox using patterns.</description>
+      <description>it&amp;#39;s all about the missing .dropboxignore file. This post introduces the dropboxignore, a tool  that allow you to ignore files or folder from your dropbox using patterns.</description>
     </item>
     
     <item>

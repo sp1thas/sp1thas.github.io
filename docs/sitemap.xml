@@ -11,10 +11,7 @@
     <loc>https://simakis.me/posts/</loc>
     <lastmod>2021-11-12T15:24:09+02:00</lastmod>
   </url><url>
-    <loc>https://simakis.me/tags/prefect/</loc>
-    <lastmod>2021-11-12T15:24:09+02:00</lastmod>
-  </url><url>
-    <loc>https://simakis.me/tags/sphinx/</loc>
+    <loc>https://simakis.me/tags/prefect-sphinx/</loc>
     <lastmod>2021-11-12T15:24:09+02:00</lastmod>
   </url><url>
     <loc>https://simakis.me/tags/</loc>
@@ -23,13 +20,22 @@
     <loc>https://simakis.me/tags/dropbox/</loc>
     <lastmod>2021-01-02T15:24:09+02:00</lastmod>
   </url><url>
+    <loc>https://simakis.me/tags/dropboxignore/</loc>
+    <lastmod>2021-01-02T15:24:09+02:00</lastmod>
+  </url><url>
     <loc>https://simakis.me/posts/exclude-files-using-dropboxignore/</loc>
+    <lastmod>2021-01-02T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/tags/glob-patterns/</loc>
     <lastmod>2021-01-02T15:24:09+02:00</lastmod>
   </url><url>
     <loc>https://simakis.me/tags/ignore-file/</loc>
     <lastmod>2021-01-02T15:24:09+02:00</lastmod>
   </url><url>
     <loc>https://simakis.me/tags/shell/</loc>
+    <lastmod>2021-01-02T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/tags/wild-card/</loc>
     <lastmod>2021-01-02T15:24:09+02:00</lastmod>
   </url><url>
     <loc>https://simakis.me/tags/python/</loc>
@@ -41,10 +47,7 @@
     <loc>https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</loc>
     <lastmod>2020-08-06T15:24:09+02:00</lastmod>
   </url><url>
-    <loc>https://simakis.me/tags/deep-learning/</loc>
-    <lastmod>2020-03-30T15:24:09+02:00</lastmod>
-  </url><url>
-    <loc>https://simakis.me/tags/machine-learning/</loc>
+    <loc>https://simakis.me/tags/python-machine-learning-deep-learning/</loc>
     <lastmod>2020-03-30T15:24:09+02:00</lastmod>
   </url><url>
     <loc>https://simakis.me/posts/semi-supervised-fraud-detection/</loc>
