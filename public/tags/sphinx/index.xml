@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>sphinx on Panagiotis Simakis</title>
     <link>https://simakis.me/tags/sphinx/</link>
     <description>Recent content in sphinx on Panagiotis Simakis</description>
+    <image>
+      <url>https://simakis.me/papermod-cover.png</url>
+      <link>https://simakis.me/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Panagiotis Simakis</copyright>
     <lastBuildDate>Fri, 12 Nov 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/sphinx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Add prefect flow visualizations into a Sphinx project</title>
@@ -14,8 +16,7 @@
       <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/sphinx-prefect/</guid>
-      <description>This article demonstrates an easy way (hopefully) to add your prefect flow visualizations into your sphinx documentation using the sphinxcontrib-prefectviz plugin.
-Some context Let&amp;rsquo;s say that you have implemented some pipelines using the lovely Prefect, great news so far, you chose a great tool to automate the boring stuff. Now it&amp;rsquo;s time to document your flows, a simple way to have an overview of your flows is to use the flow visualization.</description>
+      <description>This article demonstrates an easy way to add your prefect flow visualizations into your sphinx documentation using the `sphinxcontrib-prefectviz` plugin.</description>
     </item>
     
   </channel>

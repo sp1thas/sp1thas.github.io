@@ -1,10 +1,11 @@
 ---
 title: Curriculum Vitae
 description: My CV
+tags:
+ - cv
+category: cv
 ---
 
-# Curriculum Vitae
-
-Click <a href='/cv.pdf'><i class="fas fa-save"></i></a> to download my CV. 
+Click <a href='/cv.pdf'>here</a> to download my CV. 
 
 {{< embed-pdf url="/cv.pdf" >}}

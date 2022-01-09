@@ -1,10 +1,7 @@
 ---
-title: F/OSS Contributions
+title: My F/OSS Contributions
 description: A list with some of my contributions to F/OSS projects.
 ---
-
-## My Contributions
-
 A list with some of my contributions to F/OSS projects.
 
  - `nltk/nltk`: [PR #2910 · Fix `FileNotFoundError` when the `download_dir` is a non-existing nested folder](https://github.com/nltk/nltk/pull/2910)

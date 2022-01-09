@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>eda on Panagiotis Simakis</title>
     <link>https://simakis.me/tags/eda/</link>
     <description>Recent content in eda on Panagiotis Simakis</description>
+    <image>
+      <url>https://simakis.me/papermod-cover.png</url>
+      <link>https://simakis.me/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Panagiotis Simakis</copyright>
     <lastBuildDate>Sat, 18 Jan 2020 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/eda/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book Depository Dataset EDA</title>
@@ -14,11 +16,7 @@
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/introduction-to-book-depository-dataset/</guid>
-      <description>kaggle dataset: Book Depository Dataset
-kaggle notebook: Introduction to Book Depository Dataset
-github repo: book-depository-dataset
-Book Depository Dataset EDA Through this notebook we will try to become familiar Book Depository Dataset and extract some usefull insights. The goal of this notebook is to become an introductory step for the dataset.
-import pandas as pd import os import json from glob import glob import matplotlib.pyplot as plt import seaborn as sns %matplotlib inline Dataset Structure Files:</description>
+      <description>This notebook introduces the Book Depository Dataset and extracts some useful insights.</description>
     </item>
     
   </channel>
