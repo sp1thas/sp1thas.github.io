@@ -13,6 +13,9 @@ cover:
     responsiveImages: true
     hidden: true
 disableShare: true
+keywords:
+  - cv
+  - resume
 ---
 
 Click <a href='/cv.pdf'>here</a> to download my CV. 

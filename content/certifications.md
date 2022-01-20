@@ -4,6 +4,11 @@ description: The list of my certifications.
 ShowBreadCrumbs: false
 hideMeta: true
 disableShare: true
+keywords:
+ - certifications
+ - conferences
+ - coursera
+ - udemy
 ---
 |         |                                                                |                                                                                                  |                   |
 |---------|----------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-------------------|

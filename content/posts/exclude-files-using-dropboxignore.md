@@ -6,7 +6,8 @@ category: posts
 tags:
   - shell
   - ignore-file
-  - dropbox keywords:
+  - dropbox
+keywords:
   - glob-patterns
   - dropboxignore
   - ignore-file

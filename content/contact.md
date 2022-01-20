@@ -9,6 +9,10 @@ cover:
     relative: false
     responsiveImages: true
     hidden: true
+keywords:
+  - contact form
+  - get in touch
+  - contact
 ShowBreadCrumbs: false
 hideMeta: true
 disableShare: true

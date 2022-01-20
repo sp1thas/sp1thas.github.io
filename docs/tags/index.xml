@@ -7,11 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 12 Nov 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>prefect - sphinx</title>
-      <link>https://simakis.me/tags/prefect-sphinx/</link>
+      <title>prefect</title>
+      <link>https://simakis.me/tags/prefect/</link>
       <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
       
-      <guid>https://simakis.me/tags/prefect-sphinx/</guid>
+      <guid>https://simakis.me/tags/prefect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sphinx</title>
+      <link>https://simakis.me/tags/sphinx/</link>
+      <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/sphinx/</guid>
       <description></description>
     </item>
     
@@ -21,24 +30,6 @@
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/tags/dropbox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dropboxignore</title>
-      <link>https://simakis.me/tags/dropboxignore/</link>
-      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
-      
-      <guid>https://simakis.me/tags/dropboxignore/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>glob-patterns</title>
-      <link>https://simakis.me/tags/glob-patterns/</link>
-      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
-      
-      <guid>https://simakis.me/tags/glob-patterns/</guid>
       <description></description>
     </item>
     
@@ -57,15 +48,6 @@
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/tags/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>wild-card</title>
-      <link>https://simakis.me/tags/wild-card/</link>
-      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
-      
-      <guid>https://simakis.me/tags/wild-card/</guid>
       <description></description>
     </item>
     

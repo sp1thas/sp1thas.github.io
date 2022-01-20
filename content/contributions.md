@@ -4,6 +4,9 @@ description: A list with some of my contributions to F/OSS projects.
 ShowBreadCrumbs: false
 hideMeta: true
 disableShare: true
+keywords:
+  - open-source
+  - contributions
 ---
 
  - `nltk/nltk`: [PR #2910 · Fix `FileNotFoundError` when the `download_dir` is a non-existing nested folder](https://github.com/nltk/nltk/pull/2910)
