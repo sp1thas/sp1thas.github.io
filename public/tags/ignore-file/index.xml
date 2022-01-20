@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ignore-file on Panagiotis Simakis</title>
     <link>https://simakis.me/tags/ignore-file/</link>
     <description>Recent content in ignore-file on Panagiotis Simakis</description>
-    <image>
-      <url>https://simakis.me/papermod-cover.png</url>
-      <link>https://simakis.me/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 02 Jan 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/ignore-file/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -16,7 +12,7 @@
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/exclude-files-using-dropboxignore/</guid>
-      <description>it&amp;#39;s all about the missing .dropboxignore file. This post introduces the dropboxignore, a tool that allow you to ignore files or folder from your dropbox using patterns.</description>
+      <description>The &amp;ldquo;Problem&amp;rdquo; A common issue/request about Dropbox was about ignoring files without using Selective Sync. Dropbox recently introduced the ability to ignore specific files or folders. Although the significance of the new feature, many users [ 1, 2 , 3, 4] have expressed the importance of ignoring files from Dropbox using Glob just like .gitignore. For various reasons Dropbox doesn&amp;rsquo;t seem to have the will to implement such a feature :/</description>
     </item>
     
   </channel>

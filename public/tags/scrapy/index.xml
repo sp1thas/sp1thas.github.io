@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>scrapy on Panagiotis Simakis</title>
     <link>https://simakis.me/tags/scrapy/</link>
     <description>Recent content in scrapy on Panagiotis Simakis</description>
-    <image>
-      <url>https://simakis.me/papermod-cover.png</url>
-      <link>https://simakis.me/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 06 Aug 2020 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/scrapy/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -16,7 +12,7 @@
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</guid>
-      <description>How to employ folder structure as an efficient and easy way to store large number of images using scrapy pipelines</description>
+      <description>Introduction What is the problem and how deal with it When it comes to image storing, a common pitfall is to save all the images in a single folder. If the number of images is less than few thousands, when, stop reading this post because you will not face any issue. On the other hand, if you are planing to store numerous images, then consider splitting them in different folders. Listing a directory will become faster, more efficient and at the end of the day, your kernel will be happier.</description>
     </item>
     
   </channel>

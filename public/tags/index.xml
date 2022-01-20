@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Panagiotis Simakis</title>
     <link>https://simakis.me/tags/</link>
     <description>Recent content in Tags on Panagiotis Simakis</description>
-    <image>
-      <url>https://simakis.me/papermod-cover.png</url>
-      <link>https://simakis.me/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 12 Nov 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -74,20 +70,11 @@
     </item>
     
     <item>
-      <title>deep learning</title>
-      <link>https://simakis.me/tags/deep-learning/</link>
+      <title>python - machine learning - deep learning</title>
+      <link>https://simakis.me/tags/python-machine-learning-deep-learning/</link>
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
-      <guid>https://simakis.me/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine learning</title>
-      <link>https://simakis.me/tags/machine-learning/</link>
-      <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
-      
-      <guid>https://simakis.me/tags/machine-learning/</guid>
+      <guid>https://simakis.me/tags/python-machine-learning-deep-learning/</guid>
       <description></description>
     </item>
     
