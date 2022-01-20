@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python - machine learning - deep learning on Panagiotis Simakis</title>
     <link>https://simakis.me/tags/python-machine-learning-deep-learning/</link>
     <description>Recent content in python - machine learning - deep learning on Panagiotis Simakis</description>
-    <image>
-      <url>https://simakis.me/images/home-1.jpg</url>
-      <link>https://simakis.me/images/home-1.jpg</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 30 Mar 2020 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/python-machine-learning-deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -16,7 +12,7 @@
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/semi-supervised-fraud-detection/</guid>
-      <description>A jupyter notebook about semi-supervised fraud detection.</description>
+      <description> </description>
     </item>
     
   </channel>
