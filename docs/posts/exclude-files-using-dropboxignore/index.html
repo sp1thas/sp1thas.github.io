@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Exclude files from your dropbox easily using dropboxignore | Panagiotis Simakis</title>
-<meta name="keywords" content="shell, ignore-file, , glob-patterns, dropboxignore, ignore-file, shell, dropbox, wild-card" />
+<meta name="keywords" content="glob-patterns, dropboxignore, ignore-file, shell, dropbox, wild-card" />
 <meta name="description" content="it&#39;s all about the missing .dropboxignore file. This post introduces the dropboxignore, a tool  that allow you to ignore files or folder from your dropbox using patterns.">
 <meta name="author" content="Panagiotis Simakis">
 <link rel="canonical" href="https://simakis.me/posts/exclude-files-using-dropboxignore/" />
@@ -107,7 +107,7 @@
   "name": "Exclude files from your dropbox easily using dropboxignore",
   "description": "it's all about the missing .dropboxignore file. This post introduces the dropboxignore, a tool  that allow you to ignore files or folder from your dropbox using patterns.",
   "keywords": [
-    "shell", "ignore-file", "", "glob-patterns", "dropboxignore", "ignore-file", "shell", "dropbox", "wild-card"
+    "glob-patterns", "dropboxignore", "ignore-file", "shell", "dropbox", "wild-card"
   ],
   "articleBody": "The “Problem” A common issue/request about Dropbox was about ignoring files without using Selective Sync. Dropbox recently introduced the ability to ignore specific files or folders. Although the significance of the new feature, many users [ 1, 2 , 3, 4] have expressed the importance of ignoring files from Dropbox using Glob just like .gitignore. For various reasons Dropbox doesn’t seem to have the will to implement such a feature :/\nThe walk-around As a result, I decided to implement dropboxignore which is a simple shell script that ignores files from Dropbox based on glob patterns. Additionally, existing .gitignore files can be used to automatically generate .dropboxignore files.\nThe main difference between dropboxignore and the other relevant projects:\n rozbb/DropboxIgnore swapagarwal/dropbox_ignore ridvanaltun/dropbox-ignore-anywhere MichalKarol/dropboxignore mweirauch/dropignore  is the fact that dropboxignore is implemented in shell and has the minimum requirements (attr package is the only requirement)\ndropboxignore is currently available only for Mac and Linux and has various features:\n Ignore/Revert specific files Automatically update .dropboxignore Revert all ignored files Updated .dropboxignore based on changes in .gitignore file. Generate .dropboxignore files based on existing .gitignore files. Generate, update and ignore using a single command. Delete all .dropboxignore files.  A usecase The simplest usage example could be this: Let’s say that you want to ignore every .txt under your Dropbox folder, in that case you only have to run the following command:\n$ dropboxignore ignore *.txt You can find more usage examples here. The full documentation of the project is available here\nThings to not expect from dropboxignore  Automatically ignore new matching files.  When a new file has been created and is matched by a .dropboxignore file, user should re-ignore matching files. A cronjob could solve this drawback.\nAutomatically detect deletions from .gitignore files  Current implementation can detect and update .dropboxignore file if an extra pattern has been added in the corresponding .gitignores but it can not handle deletions in the same way.\n",
   "wordCount" : "318",
@@ -298,12 +298,9 @@ corresponding <code>.gitignores</code> but it can not handle deletions in the sa
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://simakis.me/tags/glob-patterns/">glob-patterns</a></li>
-      <li><a href="https://simakis.me/tags/dropboxignore/">dropboxignore</a></li>
-      <li><a href="https://simakis.me/tags/ignore-file/">ignore-file</a></li>
       <li><a href="https://simakis.me/tags/shell/">shell</a></li>
+      <li><a href="https://simakis.me/tags/ignore-file/">ignore-file</a></li>
       <li><a href="https://simakis.me/tags/dropbox/">dropbox</a></li>
-      <li><a href="https://simakis.me/tags/wild-card/">wild-card</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://simakis.me/posts/sphinx-prefect/">
@@ -321,7 +318,7 @@ corresponding <code>.gitignores</code> but it can not handle deletions in the sa
 
 <div class="share-buttons">
     <a target="_blank" rel="noopener noreferrer" aria-label="share Exclude files from your dropbox easily using dropboxignore on twitter"
-        href="https://twitter.com/intent/tweet/?text=Exclude%20files%20from%20your%20dropbox%20easily%20using%20dropboxignore&amp;url=https%3a%2f%2fsimakis.me%2fposts%2fexclude-files-using-dropboxignore%2f&amp;hashtags=shell%2cignore-file%2c%2cglob-patterns%2cdropboxignore%2cignore-file%2cshell%2cdropbox%2cwild-card">
+        href="https://twitter.com/intent/tweet/?text=Exclude%20files%20from%20your%20dropbox%20easily%20using%20dropboxignore&amp;url=https%3a%2f%2fsimakis.me%2fposts%2fexclude-files-using-dropboxignore%2f&amp;hashtags=shell%2cignore-file%2cdropbox">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />

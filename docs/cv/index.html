@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Curriculum Vitae | Panagiotis Simakis</title>
-<meta name="keywords" content="cv" />
+<meta name="keywords" content="cv, resume" />
 <meta name="description" content="My CV">
 <meta name="author" content="Panagiotis Simakis">
 <link rel="canonical" href="https://simakis.me/cv/" />
@@ -101,7 +101,7 @@
   "name": "Curriculum Vitae",
   "description": "My CV",
   "keywords": [
-    "cv"
+    "cv", "resume"
   ],
   "articleBody": "Click here to download my CV.\n  #the-canvas { border: 1px solid black; direction: ltr; width: 100%; height: auto; display: none; } #paginator { display: none; text-align: center; margin-bottom: 10px; } #loadingWrapper { display: none; justify-content: center; align-items: center; width: 100%; height: 350px; } #loading { display: inline-block; width: 50px; height: 50px; border: 3px solid #d2d0d0;; border-radius: 50%; border-top-color: #383838; animation: spin 1s ease-in-out infinite; -webkit-animation: spin 1s ease-in-out infinite; } @keyframes spin { to { -webkit-transform: rotate(360deg); } } @-webkit-keyframes spin { to { -webkit-transform: rotate(360deg); } }  Previous Next Page:  /       window.onload = function() { var url = \"https:\\/\\/simakis.me\\/\" + '\\/cv.pdf'; var hidePaginator = \"\" === \"true\"; var hideLoader = \"\" === \"true\"; var selectedPageNum = parseInt(\"\") || 1; var pdfjsLib = window['pdfjs-dist/build/pdf']; pdfjsLib.GlobalWorkerOptions.workerSrc = \"https:\\/\\/simakis.me\\/\" + '/js/pdf-js/build/pdf.worker.js'; var pdfDoc = null, pageNum = selectedPageNum, pageRendering = false, pageNumPending = null, scale = 3, canvas = document.getElementById('the-canvas'), ctx = canvas.getContext('2d'), paginator = document.getElementById(\"paginator\"), loadingWrapper = document.getElementById('loadingWrapper'); showPaginator(); showLoader(); function renderPage(num) { pageRendering = true; pdfDoc.getPage(num).then(function(page) { var viewport = page.getViewport({scale: scale}); canvas.height = viewport.height; canvas.width = viewport.width; var renderContext = { canvasContext: ctx, viewport: viewport }; var renderTask = page.render(renderContext); renderTask.promise.then(function() { pageRendering = false; showContent(); if (pageNumPending !== null) { renderPage(pageNumPending); pageNumPending = null; } }); }); document.getElementById('page_num').textContent = num; } function showContent() { loadingWrapper.style.display = 'none'; canvas.style.display = 'block'; } function showLoader() { if(hideLoader) return loadingWrapper.style.display = 'flex'; canvas.style.display = 'none'; } function showPaginator() { if(hidePaginator) return paginator.style.display = 'block'; } function queueRenderPage(num) { if (pageRendering) { pageNumPending = num; } else { renderPage(num); } } function onPrevPage() { if (pageNum = pdfDoc.numPages) { return; } pageNum++; queueRenderPage(pageNum); } document.getElementById('next').addEventListener('click', onNextPage); pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) { pdfDoc = pdfDoc_; var numPages = pdfDoc.numPages; document.getElementById('page_count').textContent = numPages; if(pageNum  numPages) { pageNum = numPages } renderPage(pageNum); }); }  ",
   "wordCount" : "298",

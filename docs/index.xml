@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Panagiotis Simakis</title>
     <link>https://simakis.me/</link>
     <description>Recent content on Panagiotis Simakis</description>
+    <image>
+      <url>https://simakis.me/images/home-1.jpg</url>
+      <link>https://simakis.me/images/home-1.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 12 Nov 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,8 +16,7 @@
       <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/sphinx-prefect/</guid>
-      <description>This article demonstrates an easy way (hopefully) to add your prefect flow visualizations into your sphinx documentation using the sphinxcontrib-prefectviz plugin.
-Some context Let&amp;rsquo;s say that you have implemented some pipelines using the lovely Prefect, great news so far, you chose a great tool to automate the boring stuff. Now it&amp;rsquo;s time to document your flows, a simple way to have an overview of your flows is to use the flow visualization.</description>
+      <description>This article demonstrates an easy way to add your prefect flow visualizations into your sphinx documentation using the `sphinxcontrib-prefectviz` plugin.</description>
     </item>
     
     <item>
@@ -22,7 +25,7 @@ Some context Let&amp;rsquo;s say that you have implemented some pipelines using 
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/exclude-files-using-dropboxignore/</guid>
-      <description>The &amp;ldquo;Problem&amp;rdquo; A common issue/request about Dropbox was about ignoring files without using Selective Sync. Dropbox recently introduced the ability to ignore specific files or folders. Although the significance of the new feature, many users [ 1, 2 , 3, 4] have expressed the importance of ignoring files from Dropbox using Glob just like .gitignore. For various reasons Dropbox doesn&amp;rsquo;t seem to have the will to implement such a feature :/</description>
+      <description>it&amp;#39;s all about the missing .dropboxignore file. This post introduces the dropboxignore, a tool  that allow you to ignore files or folder from your dropbox using patterns.</description>
     </item>
     
     <item>
@@ -31,7 +34,7 @@ Some context Let&amp;rsquo;s say that you have implemented some pipelines using 
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</guid>
-      <description>Introduction What is the problem and how deal with it When it comes to image storing, a common pitfall is to save all the images in a single folder. If the number of images is less than few thousands, when, stop reading this post because you will not face any issue. On the other hand, if you are planing to store numerous images, then consider splitting them in different folders. Listing a directory will become faster, more efficient and at the end of the day, your kernel will be happier.</description>
+      <description>How to employ folder structure as an efficient and easy way to store large number of images using scrapy pipelines</description>
     </item>
     
     <item>
@@ -40,7 +43,7 @@ Some context Let&amp;rsquo;s say that you have implemented some pipelines using 
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/semi-supervised-fraud-detection/</guid>
-      <description> </description>
+      <description>A jupyter notebook about semi-supervised fraud detection.</description>
     </item>
     
     <item>
@@ -49,11 +52,7 @@ Some context Let&amp;rsquo;s say that you have implemented some pipelines using 
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/introduction-to-book-depository-dataset/</guid>
-      <description>kaggle dataset: Book Depository Dataset
-kaggle notebook: Introduction to Book Depository Dataset
-github repo: book-depository-dataset
-Book Depository Dataset EDA Through this notebook we will try to become familiar Book Depository Dataset and extract some usefull insights. The goal of this notebook is to become an introductory step for the dataset.
-import pandas as pd import os import json from glob import glob import matplotlib.pyplot as plt import seaborn as sns % matplotlib inline Dataset Structure Files:</description>
+      <description>This notebook introduces the Book Depository Dataset and extracts some useful insights.</description>
     </item>
     
     <item>
@@ -62,7 +61,7 @@ import pandas as pd import os import json from glob import glob import matplotli
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://simakis.me/certifications/</guid>
-      <description>           1/2022 Pulsar API Essentials - Python cert StreamNative   1/2022 Apache Pulsar Fundamentals cert StreamNative   1/2022 Introduction to Kubeflow: Notebooks cert Arrikto   1/2022 Open Source Software Development, Linux and Git Specialization cert Coursera   12/2021 Architecting with Google Kubernetes Engine Specialization cert Coursera   12/2021 Introduction to Kubeflow: Fundamentals cert Arrikto   12/2021 Introduction to Machine Learning in Production cert Coursera   10/2020 AWS Fundamentals Specialization cert Coursera   4/2020 Programming Foundations: Web Security cert LinkedIn Learning   2/2020 Applied Text Mining in Python cert Coursera   2/2020 Sequences, Time Series and Prediction cert Coursera   3/2019 Oπe\n conference cert Athens, Greece   12/2017 Spark and Python for Big Data with PySpark cert Udemy   11/2017 2th DevOps Conference 2017 cert Athens, Greece   11/2017 0th Conference of Free &amp;amp; Open Source Software Communities  Athens, Greece   4/2017 Solr 101 cert Cognitive Class   5/2011 4th Conference of Free &amp;amp; Open Source Software Communities  Patras, Greece    </description>
+      <description>The list of my certifications.</description>
     </item>
     
     <item>
@@ -71,8 +70,7 @@ import pandas as pd import os import json from glob import glob import matplotli
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://simakis.me/contact/</guid>
-      <description>Feel free to drop a line using the following contact form.
- Send 🚀  </description>
+      <description>Get in touch</description>
     </item>
     
     <item>
@@ -81,8 +79,7 @@ import pandas as pd import os import json from glob import glob import matplotli
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://simakis.me/cv/</guid>
-      <description>Click here to download my CV.
-  #the-canvas { border: 1px solid black; direction: ltr; width: 100%; height: auto; display: none; } #paginator { display: none; text-align: center; margin-bottom: 10px; } #loadingWrapper { display: none; justify-content: center; align-items: center; width: 100%; height: 350px; } #loading { display: inline-block; width: 50px; height: 50px; border: 3px solid #d2d0d0;; border-radius: 50%; border-top-color: #383838; animation: spin 1s ease-in-out infinite; -webkit-animation: spin 1s ease-in-out infinite; } @keyframes spin { to { -webkit-transform: rotate(360deg); } } @-webkit-keyframes spin { to { -webkit-transform: rotate(360deg); } }  Previous Next &amp;nbsp; &amp;nbsp; Page:  /       window.</description>
+      <description>My CV</description>
     </item>
     
     <item>
@@ -91,7 +88,7 @@ import pandas as pd import os import json from glob import glob import matplotli
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://simakis.me/contributions/</guid>
-      <description>nltk/nltk: PR #2910 · Fix FileNotFoundError when the download_dir is a non-existing nested folder jazzband/django-auditlog: PR #295 · Replace deprecated smart_text() with smart_str() PrefectHQ/prefect:  PR #3729 · Support passing helper_script to ShellTask/DBTShellTask at runtime PR #3612 · pass day_or croniter argument to CronClock &amp;amp; CronSchedule PR #3548 · RenameFlowRunTask: use default flow_run_id value from context PR #3522 · specify slack webhook_secret on runtime PR #3479 · explicit exception chaining for spacy tasks PR #3460 · S3List filtering using the LastModified  PR #3072 · Ignore calls to flow.</description>
+      <description>A list with some of my contributions to F/OSS projects.</description>
     </item>
     
   </channel>
