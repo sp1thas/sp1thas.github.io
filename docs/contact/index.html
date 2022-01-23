@@ -20,7 +20,7 @@
 <link rel="mask-icon" href="https://simakis.me/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.91.2" />
+<meta name="generator" content="Hugo 0.92.0" />
 <noscript>
     <style>
         #theme-toggle,
@@ -65,7 +65,9 @@
   gtag('js', new Date());
 
   gtag('config', 'G-5S9QPCJWL8');
-</script><meta property="og:title" content="Contact form" />
+</script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Lfw0jEeAAAAAG9AukBmzaeHtY8X1cdr8MnGclFU"></script>
+<meta property="og:title" content="Contact form" />
 <meta property="og:description" content="Get in touch" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://simakis.me/contact/" />
@@ -103,8 +105,8 @@
   "keywords": [
     "contact form", "get in touch", "contact"
   ],
-  "articleBody": "Feel free to drop a line using the following contact form.\n Send 🚀  ",
-  "wordCount" : "13",
+  "articleBody": "Feel free to drop a line using the following contact form.\n Send 🚀    grecaptcha.ready(function() { grecaptcha.execute('6Lfw0jEeAAAAAG9AukBmzaeHtY8X1cdr8MnGclFU', {action: 'homepage'}) .then(function(token) { document.getElementById('captchaResponse').value = token; }); });   ",
+  "wordCount" : "25",
   "inLanguage": "en",
   "image":"https://simakis.me/images/contact.jpg","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -206,12 +208,23 @@
   <div class="post-content"><p>Feel free to drop a line using the following contact form.</p>
 <div id="searchbox">
     <form action="https://getform.io/f/acca828a-9b81-4ab5-9ddd-08d4315ac5bc" method="POST">
+        <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
         <input id="searchbox" type="text" name="name" placeholder="Name" style="margin-bottom: 5px;">
         <input id="searchbox" type="email" name="email" placeholder="Email" style="margin-bottom: 5px;">
         <textarea id="searchbox" rows = "5" cols = "60" name = "message" placeholder="Message" style="margin-bottom: 5px; padding: 4px 10px; width: 100%; color: var(--primary); font-weight: bold; border: 2px solid var(--tertiary); border-radius: var(--radius);"></textarea>
         <button id="form-button" type="submit" style="padding: 4px 10px; width: 100%; color: var(--primary); font-weight: bold; border: 2px solid var(--tertiary); border-radius: var(--radius);">Send 🚀</button>
     </form>
 </div>
+<script>
+   grecaptcha.ready(function() {
+       grecaptcha.execute('6Lfw0jEeAAAAAG9AukBmzaeHtY8X1cdr8MnGclFU', {action: 'homepage'})
+       .then(function(token) {
+         document.getElementById('captchaResponse').value = token;
+       });
+     });
+</script><blockquote>
+</blockquote>
+
 
   </div>
 
