@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Panagiotis Simakis</title>
+    <link>https://simakis.me/tags/</link>
+    <description>Recent content in Tags on Panagiotis Simakis</description>
+    <image>
+      <url>https://simakis.me/images/home-1.jpg</url>
+      <link>https://simakis.me/images/home-1.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 12 Nov 2021 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>prefect</title>
+      <link>https://simakis.me/tags/prefect/</link>
+      <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/prefect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sphinx</title>
+      <link>https://simakis.me/tags/sphinx/</link>
+      <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/sphinx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dropbox</title>
+      <link>https://simakis.me/tags/dropbox/</link>
+      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/dropbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ignore-file</title>
+      <link>https://simakis.me/tags/ignore-file/</link>
+      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/ignore-file/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://simakis.me/tags/shell/</link>
+      <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://simakis.me/tags/python/</link>
+      <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scrapy</title>
+      <link>https://simakis.me/tags/scrapy/</link>
+      <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/scrapy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python - machine learning - deep learning</title>
+      <link>https://simakis.me/tags/python-machine-learning-deep-learning/</link>
+      <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/python-machine-learning-deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dataset</title>
+      <link>https://simakis.me/tags/dataset/</link>
+      <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/dataset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eda</title>
+      <link>https://simakis.me/tags/eda/</link>
+      <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/eda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cv</title>
+      <link>https://simakis.me/tags/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://simakis.me/tags/cv/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
