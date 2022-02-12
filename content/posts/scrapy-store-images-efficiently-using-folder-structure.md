@@ -25,6 +25,7 @@ cover:
     caption: "Archive Shelfs at Sächsisches Staatsarchiv in Dresden, Saxony, Germany -- [C M](https://unsplash.com/photos/X_j3b4rqnlk)"
     relative: false
     responsiveImages: true
+mathjax: true
 ---
 
 ## Introduction
