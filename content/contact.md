@@ -16,7 +16,7 @@ keywords:
 ShowBreadCrumbs: false
 hideMeta: true
 disableShare: true
-disableComment: true
+comments: false
 ---
 
 Feel free to drop a line using the following contact form.

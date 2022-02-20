@@ -4,7 +4,7 @@ description: The list of my certifications.
 ShowBreadCrumbs: false
 hideMeta: true
 disableShare: true
-disableComment: true
+comments: false
 keywords:
  - certifications
  - conferences
