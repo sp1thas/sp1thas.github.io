@@ -4,6 +4,7 @@ description: A list with some of my contributions to F/OSS projects.
 ShowBreadCrumbs: false
 hideMeta: true
 disableShare: true
+disableComment: true
 keywords:
   - open-source
   - contributions

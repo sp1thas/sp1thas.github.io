@@ -14,6 +14,7 @@ ShowBreadCrumbs: false
 hideMeta: true
 ShowToc: false
 disableShare: true
+disableComment: true
 keywords:
   - cv
   - resume
