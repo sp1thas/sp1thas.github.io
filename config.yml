@@ -9,7 +9,6 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
-# googleAnalytics: UA-123-45
 disqusShortname: simakis-me
 
 minify:
@@ -30,6 +29,9 @@ languages:
           weight: 5
         - name: Contributions
           url: contributions/
+          weight: 8
+        - name: Search
+          url: search/
           weight: 9
         - name: Contact
           url: contact/
@@ -44,8 +46,9 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "My personal website"
+  description: "I'm Panagiotis Simakis and this is my personal website"
   author: Panagiotis Simakis
+  custom_css: ['/custom.css']
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
@@ -80,7 +83,6 @@ params:
     Title: "Panagiotis Simakis"
     Content: >
       Hi there 👋 and welcome to my personal website. 
-        
       I'm a Software Engineer, passionate with NLP and GNU/Linux addict. 
       I'm currently working as Senior Data Engineer at [Netdata](https://netdata.cloud/)
 
@@ -88,7 +90,9 @@ params:
     - name: github
       url: "https://github.com/sp1thas"
     - name: linkedin
-      url: "https://github.com/sp1thas"
+      url: "https://www.linkedin.com/in/psimakis/"
+    - name: twitter
+      url: "https://twitter.com/sp1thas"
     - name: stackoverflow
       url: "https://github.com/sp1thas"
     - name: dev
@@ -97,6 +101,16 @@ params:
       url: "https://kaggle.com/sp1thas"
     - name: keybase
       url: "https://keybase.io/spithas"
+    - name: goodreads
+      url: "https://www.goodreads.com/user/show/114273410-panagiotis-simakis"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?hl=en&user=8TCTBa0AAAAJ"
+    - name: researchgate
+      url: "https://www.researchgate.net/profile/Panagiotis-Simakis"
+    - name: reddit
+      url: "https://www.reddit.com/user/sp1thas_"
+    - name: cv
+      url: "/cv.pdf"
     - name: Rss
       url: "index.xml"
 
