@@ -14,6 +14,7 @@ keywords:
  
 |         |                                                                |                                                                                                  |                   |
 |---------|----------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-------------------|
+| 4/2022  | Astronomer Certification for Apache Airflow Fundamentals       | [cert](https://www.credly.com/badges/d91ad9b6-d5c8-4859-9d53-5b48253b5d45/public_url)            | Astronomer        |
 | 3/2022  | Introduction to Kubeﬂow: Pipelines                             | [cert](/certifications/kubeflow-pipelines-2022.pdf)                                              | Arrikto           |
 | 1/2022  | Pulsar API Essentials - Python                                 | [cert](https://www.academy.streamnative.io/certificates/b27eb87372064815a2b8d8e88495a0ef)        | StreamNative      |
 | 1/2022  | Apache Pulsar Fundamentals                                     | [cert](https://www.academy.streamnative.io/certificates/9f37872bdfab45fe8b4f5ee9f189f1cd)        | StreamNative      |
