@@ -13,7 +13,7 @@ keywords:
  - `nltk/nltk`: [#2910 · Fix `FileNotFoundError` when the `download_dir` is a non-existing nested folder](https://github.com/nltk/nltk/pull/2910)
  - `jazzband/django-auditlog`: [PR #295 · Replace deprecated smart_text() with smart_str()](https://github.com/jazzband/django-auditlog/pull/295)
  - `PrefectHQ/prefect`: 
-   - [#5541 · Support passing `helper_script` to `ShellTask`/`DBTShellTask` at runtime](https://github.com/PrefectHQ/prefect/pull/5541) 
+   - [#5541 · Feat/Support default value on `DatetimeParameter`](https://github.com/PrefectHQ/prefect/pull/5541) 
    - [#3729 · Support passing `helper_script` to `ShellTask`/`DBTShellTask` at runtime](https://github.com/PrefectHQ/prefect/pull/3729) 
    - [#3612 · pass day_or croniter argument to CronClock & CronSchedule](https://github.com/PrefectHQ/prefect/pull/3612)
    - [#3548 · RenameFlowRunTask: use default flow_run_id value from context](https://github.com/PrefectHQ/prefect/pull/3548)
