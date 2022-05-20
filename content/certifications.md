@@ -10,6 +10,8 @@ keywords:
  - conferences
  - coursera
  - udemy
+ - astronomer
+ - arrikto
 ---
  
 |         |                                                                |                                                                                                  |                   |
