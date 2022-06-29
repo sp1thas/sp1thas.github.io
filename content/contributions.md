@@ -10,6 +10,7 @@ keywords:
   - contributions
 ---
 
+ - [`sphinx-contrib/prefectviz`](https://github.com/sphinx-contrib/prefectviz): Maintainer
  - `nltk/nltk`: [#2910 · Fix `FileNotFoundError` when the `download_dir` is a non-existing nested folder](https://github.com/nltk/nltk/pull/2910)
  - `jazzband/django-auditlog`: [PR #295 · Replace deprecated smart_text() with smart_str()](https://github.com/jazzband/django-auditlog/pull/295)
  - `PrefectHQ/prefect`: 
