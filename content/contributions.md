@@ -10,6 +10,8 @@ keywords:
   - contributions
 ---
 
+ - `great-expectations/great_expectations`:
+   - [#5393 · \[FEATURE\] Support underscore in the `condition_value` of a `row_condition`](https://github.com/great-expectations/great_expectations/pull/5393)
  - [`sphinx-contrib/prefectviz`](https://github.com/sphinx-contrib/prefectviz): Maintainer
  - `nltk/nltk`: [#2910 · Fix `FileNotFoundError` when the `download_dir` is a non-existing nested folder](https://github.com/nltk/nltk/pull/2910)
  - `jazzband/django-auditlog`: [PR #295 · Replace deprecated smart_text() with smart_str()](https://github.com/jazzband/django-auditlog/pull/295)
