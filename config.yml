@@ -73,7 +73,7 @@ params:
     subtitle: >
       Hi there 👋 and welcome to my personal website.<br/>
       I'm a Software Engineer, passionate with NLP and GNU/Linux addict.<br/>
-      I'm currently working as Senior Data Engineer at [Netdata](https://netdata.cloud/)
+      Data Engineering is my reality.
     imageUrl: "/logo.png"
     imageTitle: Profile image
     imageWidth: 240
@@ -84,7 +84,7 @@ params:
     Content: >
       Hi there 👋 and welcome to my personal website. 
       I'm a Software Engineer, passionate with NLP and GNU/Linux addict. 
-      I'm currently working as Senior Data Engineer at [Netdata](https://netdata.cloud/)
+      Data Engineering is my reality.
 
   socialIcons:
     - name: github
