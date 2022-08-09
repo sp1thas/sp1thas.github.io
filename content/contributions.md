@@ -11,6 +11,7 @@ keywords:
 ---
 
  - `great-expectations/great_expectations`:
+   - [#5580 · \[FEATURE\] Add `expect_column_values_to_be_valid_crc32`](https://github.com/great-expectations/great_expectations/pull/5580)
    - [#5393 · \[FEATURE\] Support underscore in the `condition_value` of a `row_condition`](https://github.com/great-expectations/great_expectations/pull/5393)
  - [`sphinx-contrib/prefectviz`](https://github.com/sphinx-contrib/prefectviz): Maintainer
  - `nltk/nltk`: [#2910 · Fix `FileNotFoundError` when the `download_dir` is a non-existing nested folder](https://github.com/nltk/nltk/pull/2910)
