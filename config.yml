@@ -94,9 +94,9 @@ params:
     - name: twitter
       url: "https://twitter.com/sp1thas"
     - name: stackoverflow
-      url: "https://github.com/sp1thas"
+      url: "https://stackoverflow.com/users/6779252/panagiotis-simakis"
     - name: dev
-      url: "https://github.com/sp1thas"
+      url: "https://dev.to/sp1thas"
     - name: kaggle
       url: "https://kaggle.com/sp1thas"
     - name: keybase
