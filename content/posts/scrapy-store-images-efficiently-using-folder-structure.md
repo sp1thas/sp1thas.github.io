@@ -30,6 +30,8 @@ mathjax: true
 
 ## Introduction
 
+**NOTE**: This article was the reason to implement the `scrapy-folder-tree` scrapy extension.
+
 ### What is the problem and how deal with it
 
 When it comes to image storing, a common pitfall is to save all the images in a single folder. If the number of images
