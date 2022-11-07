@@ -73,7 +73,7 @@ params:
     subtitle: >
       Hi there 👋 and welcome to my personal website.<br/>
       I'm a Software Engineer, passionate with NLP and GNU/Linux addict.<br/>
-      Data Engineering is my reality.
+      I'm currently working as Data Engineer at [PriceHubble.](https://pricehubble.com/)
     imageUrl: "/logo.png"
     imageTitle: Profile image
     imageWidth: 240
@@ -84,7 +84,7 @@ params:
     Content: >
       Hi there 👋 and welcome to my personal website. 
       I'm a Software Engineer, passionate with NLP and GNU/Linux addict. 
-      Data Engineering is my reality.
+      I'm currently working as Data Engineer at PriceHubble.
 
   socialIcons:
     - name: github
