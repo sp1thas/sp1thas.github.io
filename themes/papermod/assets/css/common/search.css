@@ -11,6 +11,24 @@
     border-color: var(--secondary);
 }
 
+#searchbox textarea {
+    padding: 4px 10px;
+    width: 100%;
+    color: var(--primary);
+    font-weight: bold;
+    border: 2px solid var(--tertiary);
+    border-radius: var(--radius);
+}
+
+#searchbox button {
+    padding: 4px 10px;
+    width: 100%;
+    color: var(--primary);
+    font-weight: bold;
+    border: 2px solid var(--tertiary);
+    border-radius: var(--radius);
+}
+
 #searchResults li {
     list-style: none;
     border-radius: var(--radius);
