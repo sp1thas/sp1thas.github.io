@@ -1,7 +1,7 @@
 baseURL: "https://simakis.me/"
 title: Panagiotis Simakis
 paginate: 5
-theme: papermod
+theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true

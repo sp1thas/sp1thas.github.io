@@ -10,6 +10,7 @@ keywords:
   - contributions
 ---
 
+ - `samuelmeuli/action-snapcraft`: [#38 · Upgrade to node 16](https://github.com/samuelmeuli/action-snapcraft/pull/38)
  - `great-expectations/great_expectations`:
    - [#5580 · \[FEATURE\] Add `expect_column_values_to_be_valid_crc32`](https://github.com/great-expectations/great_expectations/pull/5580)
    - [#5393 · \[FEATURE\] Support underscore in the `condition_value` of a `row_condition`](https://github.com/great-expectations/great_expectations/pull/5393)
