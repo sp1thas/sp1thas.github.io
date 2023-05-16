@@ -10,7 +10,61 @@
       <link>https://simakis.me/images/home-1.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 20 Feb 2022 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 May 2023 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dependency management</title>
+      <link>https://simakis.me/tags/dependency-management/</link>
+      <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/dependency-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://simakis.me/tags/docker/</link>
+      <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fastapi</title>
+      <link>https://simakis.me/tags/fastapi/</link>
+      <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/fastapi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>packaging</title>
+      <link>https://simakis.me/tags/packaging/</link>
+      <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/packaging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>poetry</title>
+      <link>https://simakis.me/tags/poetry/</link>
+      <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/poetry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://simakis.me/tags/python/</link>
+      <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/tags/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>flatpak</title>
       <link>https://simakis.me/tags/flatpak/</link>
@@ -89,15 +143,6 @@
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/tags/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://simakis.me/tags/python/</link>
-      <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
-      
-      <guid>https://simakis.me/tags/python/</guid>
       <description></description>
     </item>
     

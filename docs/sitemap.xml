@@ -1,152 +1,108 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://simakis.me/tags/dependency-management/</loc>
+    <lastmod>2023-05-16T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/tags/docker/</loc>
+    <lastmod>2023-05-16T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/tags/fastapi/</loc>
+    <lastmod>2023-05-16T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/tags/packaging/</loc>
+    <lastmod>2023-05-16T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/</loc>
+    <lastmod>2023-05-16T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/tags/poetry/</loc>
+    <lastmod>2023-05-16T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/posts/</loc>
+    <lastmod>2023-05-16T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/tags/python/</loc>
+    <lastmod>2023-05-16T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/posts/fastapi-dev-deps-multi-stage-builds/</loc>
+    <lastmod>2023-05-16T15:24:09+02:00</lastmod>
+  </url><url>
+    <loc>https://simakis.me/tags/</loc>
+    <lastmod>2023-05-16T15:24:09+02:00</lastmod>
+  </url><url>
     <loc>https://simakis.me/tags/flatpak/</loc>
     <lastmod>2022-02-20T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/github-actions/</loc>
     <lastmod>2022-02-20T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/oss/</loc>
     <lastmod>2022-02-20T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/posts/oss-user-counting/</loc>
     <lastmod>2022-02-20T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://simakis.me/</loc>
-    <lastmod>2022-02-20T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://simakis.me/posts/</loc>
-    <lastmod>2022-02-20T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/snapcraft/</loc>
     <lastmod>2022-02-20T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://simakis.me/tags/</loc>
-    <lastmod>2022-02-20T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/posts/sphinx-prefect/</loc>
     <lastmod>2021-11-12T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/prefect/</loc>
     <lastmod>2021-11-12T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/sphinx/</loc>
     <lastmod>2021-11-12T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/dropbox/</loc>
     <lastmod>2021-01-02T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/posts/exclude-files-using-dropboxignore/</loc>
     <lastmod>2021-01-02T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/ignore-file/</loc>
     <lastmod>2021-01-02T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/shell/</loc>
     <lastmod>2021-01-02T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://simakis.me/tags/python/</loc>
-    <lastmod>2020-08-06T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/scrapy/</loc>
     <lastmod>2020-08-06T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</loc>
     <lastmod>2020-08-06T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/python-machine-learning-deep-learning/</loc>
     <lastmod>2020-03-30T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/posts/semi-supervised-fraud-detection/</loc>
     <lastmod>2020-03-30T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/posts/introduction-to-book-depository-dataset/</loc>
     <lastmod>2020-01-18T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/dataset/</loc>
     <lastmod>2020-01-18T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/eda/</loc>
     <lastmod>2020-01-18T15:24:09+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/certifications/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/contact/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/cv/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/tags/cv/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/contributions/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/search/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://simakis.me/series/</loc>
   </url>
-  
 </urlset>

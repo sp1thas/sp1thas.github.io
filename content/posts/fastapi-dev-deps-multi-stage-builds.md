@@ -23,8 +23,7 @@ description: This is a guide on how to take advantage of the docker multi-stage 
 cover:
     image: "/images/post-covers/separate.jpg"
     alt: "separate"
-    caption: "Photo by [Will Francis](https://unsplash.com/@willfrancis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Rm3nWQiDTzg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-  "
+    caption: "Photo by [Will Francis](https://unsplash.com/@willfrancis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Rm3nWQiDTzg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
     relative: false
     responsiveImages: true
 ---

@@ -10,7 +10,16 @@
       <link>https://simakis.me/images/home-1.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Aug 2020 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 May 2023 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Separate app dependencies using Multi-stage builds</title>
+      <link>https://simakis.me/posts/fastapi-dev-deps-multi-stage-builds/</link>
+      <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
+      
+      <guid>https://simakis.me/posts/fastapi-dev-deps-multi-stage-builds/</guid>
+      <description>This is a guide on how to take advantage of the docker multi-stage builds in order to separate core and dev dependencies and keep you docker images even more optimized.</description>
+    </item>
+    
     <item>
       <title>Store images efficiently in scrapy using folder structure</title>
       <link>https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</link>
