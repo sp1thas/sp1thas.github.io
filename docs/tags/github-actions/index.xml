@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>github-actions on Panagiotis Simakis</title>
     <link>https://simakis.me/tags/github-actions/</link>
     <description>Recent content in github-actions on Panagiotis Simakis</description>
-    <image>
-      <title>Panagiotis Simakis</title>
-      <url>https://simakis.me/images/home-1.jpg</url>
-      <link>https://simakis.me/images/home-1.jpg</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 20 Feb 2022 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -17,7 +12,8 @@
       <pubDate>Sun, 20 Feb 2022 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/oss-user-counting/</guid>
-      <description>Track and monitor the total number of users using Github Actions.</description>
+      <description>Context A beta version of your awesome open-source software has been released. Great news so far. Except from introducing new features, fixing bugs and answering users&amp;rsquo; questions, it&amp;rsquo;s really important to have an estimation of the total number of users. In case you are not the only user of your OSS, it&amp;rsquo;s significant to monitor the active users for the following reasons:
+Motivation. Knowing that people are using you software will motivate you to keep maintaining and improving your project.</description>
     </item>
     
   </channel>
