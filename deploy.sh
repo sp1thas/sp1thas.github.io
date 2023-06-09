@@ -16,7 +16,7 @@ LC_TIME=en_US.utf8 msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi
-git commit -m "$msg"
+git commit --allow-empty -m "$msg"
 
 # Push source and build repos.
 git push origin main

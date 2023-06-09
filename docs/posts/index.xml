@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Panagiotis Simakis</title>
     <link>https://simakis.me/posts/</link>
     <description>Recent content in Posts on Panagiotis Simakis</description>
+    <image>
+      <title>Panagiotis Simakis</title>
+      <url>https://simakis.me/images/home-1.jpg</url>
+      <link>https://simakis.me/images/home-1.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 16 May 2023 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,8 +17,7 @@
       <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/fastapi-dev-deps-multi-stage-builds/</guid>
-      <description>Intro Deploying and testing a web app using docker has become the standard nowadays. Quite often, we don&amp;rsquo;t pay attention on building more than one docker images of the service in order to use them for different scenarios. One of the most known use cases are the following:
-Use the docker image to run the application. Use the docker image to run the tests. Usually, the second scenario comes with some additional dependencies, such us: testing frameworks, mocking tools and others.</description>
+      <description>This is a guide on how to take advantage of the docker multi-stage builds in order to separate core and dev dependencies and keep you docker images even more optimized.</description>
     </item>
     
     <item>
@@ -22,8 +26,7 @@ Use the docker image to run the application. Use the docker image to run the tes
       <pubDate>Sun, 20 Feb 2022 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/oss-user-counting/</guid>
-      <description>Context A beta version of your awesome open-source software has been released. Great news so far. Except from introducing new features, fixing bugs and answering users&amp;rsquo; questions, it&amp;rsquo;s really important to have an estimation of the total number of users. In case you are not the only user of your OSS, it&amp;rsquo;s significant to monitor the active users for the following reasons:
-Motivation. Knowing that people are using you software will motivate you to keep maintaining and improving your project.</description>
+      <description>Track and monitor the total number of users using Github Actions.</description>
     </item>
     
     <item>
@@ -32,8 +35,7 @@ Motivation. Knowing that people are using you software will motivate you to keep
       <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/sphinx-prefect/</guid>
-      <description>This article demonstrates an easy way (hopefully) to add your prefect flow visualizations into your sphinx documentation using the sphinxcontrib-prefectviz plugin.
-Some context Let&amp;rsquo;s say that you have implemented some pipelines using the lovely Prefect, great news so far, you chose a great tool to automate the boring stuff. Now it&amp;rsquo;s time to document your flows, a simple way to have an overview of your flows is to use the flow visualization.</description>
+      <description>This article demonstrates an easy way to add your prefect flow visualizations into your sphinx documentation using the `sphinxcontrib-prefectviz` plugin.</description>
     </item>
     
     <item>
@@ -42,7 +44,7 @@ Some context Let&amp;rsquo;s say that you have implemented some pipelines using 
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/exclude-files-using-dropboxignore/</guid>
-      <description>The &amp;ldquo;Problem&amp;rdquo; A common issue/request about Dropbox was about ignoring files without using Selective Sync. Dropbox recently introduced the ability to ignore specific files or folders. Although the significance of the new feature, many users [ 1, 2 , 3, 4] have expressed the importance of ignoring files from Dropbox using Glob just like .gitignore. For various reasons Dropbox doesn&amp;rsquo;t seem to have the will to implement such a feature :/</description>
+      <description>it&amp;#39;s all about the missing .dropboxignore file. This post introduces the dropboxignore, a tool  that allow you to ignore files or folder from your dropbox using patterns.</description>
     </item>
     
     <item>
@@ -51,8 +53,7 @@ Some context Let&amp;rsquo;s say that you have implemented some pipelines using 
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/scrapy-store-images-efficiently-using-folder-structure/</guid>
-      <description>Introduction NOTE: This article was the reason to implement the scrapy-folder-tree scrapy extension.
-What is the problem and how deal with it When it comes to image storing, a common pitfall is to save all the images in a single folder. If the number of images is less than few thousands, when, stop reading this post because you will not face any issue. On the other hand, if you are planing to store numerous images, then consider splitting them in different folders.</description>
+      <description>How to employ folder structure as an efficient and easy way to store large number of images using scrapy pipelines</description>
     </item>
     
     <item>
@@ -61,7 +62,7 @@ What is the problem and how deal with it When it comes to image storing, a commo
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/semi-supervised-fraud-detection/</guid>
-      <description> </description>
+      <description>A jupyter notebook about semi-supervised fraud detection.</description>
     </item>
     
     <item>
@@ -70,11 +71,7 @@ What is the problem and how deal with it When it comes to image storing, a commo
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
       <guid>https://simakis.me/posts/introduction-to-book-depository-dataset/</guid>
-      <description>kaggle dataset: Book Depository Dataset
-kaggle notebook: Introduction to Book Depository Dataset
-github repo: book-depository-dataset
-Book Depository Dataset EDA Through this notebook we will try to become familiar Book Depository Dataset and extract some usefull insights. The goal of this notebook is to become an introductory step for the dataset.
-import pandas as pd import os import json from glob import glob import matplotlib.pyplot as plt import seaborn as sns % matplotlib inline Dataset Structure Files:</description>
+      <description>This notebook introduces the Book Depository Dataset and extracts some useful insights.</description>
     </item>
     
   </channel>
