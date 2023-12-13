@@ -14,6 +14,9 @@ keywords:
   - shell
   - dropbox
   - wild-card
+  - floss
+  - oss
+  - open-source
 
 description: it's all about the missing .dropboxignore file. This post introduces the dropboxignore, a tool  that allow you to ignore files or folder from your dropbox using patterns.
 

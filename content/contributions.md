@@ -6,8 +6,10 @@ hideMeta: true
 disableShare: true
 comments: false
 keywords:
-  - open-source
-  - contributions
+ - open-source
+ - contributions
+ - floss
+ - oss
 ---
 
  - `google/python-fire`: [#462 · Add missing argument description](https://github.com/google/python-fire/pull/462)

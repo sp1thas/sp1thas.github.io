@@ -12,8 +12,9 @@ keywords:
   - count
   - count-installations
   - github-actions
-  - open-source
+  - floss
   - oss
+  - open-source
 
 description: Track and monitor the total number of users using Github Actions.
 

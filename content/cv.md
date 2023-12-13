@@ -16,8 +16,9 @@ ShowToc: false
 disableShare: true
 comments: false
 keywords:
-  - cv
-  - resume
+ - cv
+ - resume
+ - curriculum vitae
 ---
 
 Click <a href='/cv.pdf'>here</a> to download my CV.

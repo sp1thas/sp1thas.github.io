@@ -11,6 +11,10 @@ tags:
 keywords:
   - book depository dataset
   - python eda
+  - open-data
+  - floss
+  - oss
+  - open-source
 
 description: This notebook introduces the Book Depository Dataset and extracts some useful insights.
 cover:

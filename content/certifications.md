@@ -7,16 +7,21 @@ disableShare: true
 comments: false
 keywords:
  - certifications
+ - training
+ - courses
  - conferences
  - coursera
  - udemy
  - astronomer
  - arrikto
- - pulsar
+ - cognitive
+ - streamnative
+ - linkedin
 ---
  
 |         |                                                                |                                                                                                  |                   |
 |---------|----------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-------------------|
+| 12/2023 | Astronomer Certification DAG Authoring for Apache Airflow      | [cert](https://www.credly.com/badges/f2db7c81-7569-4aef-b224-2c852412e133/public_url)            | Astronomer        |
 | 6/2023  | DataOps Methodology                                            | [cert](https://www.coursera.org/account/accomplishments/certificate/DDYT4MXBGYWM)                | Coursera          |
 | 4/2022  | Astronomer Certification for Apache Airflow Fundamentals       | [cert](https://www.credly.com/badges/d91ad9b6-d5c8-4859-9d53-5b48253b5d45/public_url)            | Astronomer        |
 | 3/2022  | Introduction to Kubeﬂow: Pipelines                             | [cert](/certifications/kubeflow-pipelines-2022.pdf)                                              | Arrikto           |

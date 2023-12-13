@@ -16,7 +16,7 @@ keywords:
   - python
   - fastapi
   - poetry
-  - dependency management
+  - dependencies management
   - packaging
 
 description: This is a guide on how to take advantage of the docker multi-stage builds in order to separate core and dev dependencies and keep you docker images even more optimized.
