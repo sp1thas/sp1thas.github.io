@@ -10,9 +10,10 @@
       <link>https://simakis.me/images/home-1.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Tue, 16 May 2023 15:24:09 +0200</lastBuildDate><atom:link href="https://simakis.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>dependency management</title>
+      <title>Dependency Management</title>
       <link>https://simakis.me/tags/dependency-management/</link>
       <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
       
@@ -21,7 +22,7 @@
     </item>
     
     <item>
-      <title>docker</title>
+      <title>Docker</title>
       <link>https://simakis.me/tags/docker/</link>
       <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
       
@@ -30,7 +31,7 @@
     </item>
     
     <item>
-      <title>fastapi</title>
+      <title>Fastapi</title>
       <link>https://simakis.me/tags/fastapi/</link>
       <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
       
@@ -39,7 +40,7 @@
     </item>
     
     <item>
-      <title>packaging</title>
+      <title>Packaging</title>
       <link>https://simakis.me/tags/packaging/</link>
       <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
       
@@ -48,7 +49,7 @@
     </item>
     
     <item>
-      <title>poetry</title>
+      <title>Poetry</title>
       <link>https://simakis.me/tags/poetry/</link>
       <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
       
@@ -57,7 +58,7 @@
     </item>
     
     <item>
-      <title>python</title>
+      <title>Python</title>
       <link>https://simakis.me/tags/python/</link>
       <pubDate>Tue, 16 May 2023 15:24:09 +0200</pubDate>
       
@@ -66,7 +67,7 @@
     </item>
     
     <item>
-      <title>flatpak</title>
+      <title>Flatpak</title>
       <link>https://simakis.me/tags/flatpak/</link>
       <pubDate>Sun, 20 Feb 2022 15:24:09 +0200</pubDate>
       
@@ -75,7 +76,7 @@
     </item>
     
     <item>
-      <title>github-actions</title>
+      <title>Github-Actions</title>
       <link>https://simakis.me/tags/github-actions/</link>
       <pubDate>Sun, 20 Feb 2022 15:24:09 +0200</pubDate>
       
@@ -84,7 +85,7 @@
     </item>
     
     <item>
-      <title>oss</title>
+      <title>Oss</title>
       <link>https://simakis.me/tags/oss/</link>
       <pubDate>Sun, 20 Feb 2022 15:24:09 +0200</pubDate>
       
@@ -93,7 +94,7 @@
     </item>
     
     <item>
-      <title>snapcraft</title>
+      <title>Snapcraft</title>
       <link>https://simakis.me/tags/snapcraft/</link>
       <pubDate>Sun, 20 Feb 2022 15:24:09 +0200</pubDate>
       
@@ -102,7 +103,7 @@
     </item>
     
     <item>
-      <title>prefect</title>
+      <title>Prefect</title>
       <link>https://simakis.me/tags/prefect/</link>
       <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
       
@@ -111,7 +112,7 @@
     </item>
     
     <item>
-      <title>sphinx</title>
+      <title>Sphinx</title>
       <link>https://simakis.me/tags/sphinx/</link>
       <pubDate>Fri, 12 Nov 2021 15:24:09 +0200</pubDate>
       
@@ -120,7 +121,7 @@
     </item>
     
     <item>
-      <title>dropbox</title>
+      <title>Dropbox</title>
       <link>https://simakis.me/tags/dropbox/</link>
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
@@ -129,7 +130,7 @@
     </item>
     
     <item>
-      <title>ignore-file</title>
+      <title>Ignore-File</title>
       <link>https://simakis.me/tags/ignore-file/</link>
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
@@ -138,7 +139,7 @@
     </item>
     
     <item>
-      <title>shell</title>
+      <title>Shell</title>
       <link>https://simakis.me/tags/shell/</link>
       <pubDate>Sat, 02 Jan 2021 15:24:09 +0200</pubDate>
       
@@ -147,7 +148,7 @@
     </item>
     
     <item>
-      <title>scrapy</title>
+      <title>Scrapy</title>
       <link>https://simakis.me/tags/scrapy/</link>
       <pubDate>Thu, 06 Aug 2020 15:24:09 +0200</pubDate>
       
@@ -156,16 +157,16 @@
     </item>
     
     <item>
-      <title>python - machine learning - deep learning</title>
-      <link>https://simakis.me/tags/python-machine-learning-deep-learning/</link>
+      <title>Python - Machine Learning - Deep Learning</title>
+      <link>https://simakis.me/tags/python---machine-learning---deep-learning/</link>
       <pubDate>Mon, 30 Mar 2020 15:24:09 +0200</pubDate>
       
-      <guid>https://simakis.me/tags/python-machine-learning-deep-learning/</guid>
+      <guid>https://simakis.me/tags/python---machine-learning---deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>dataset</title>
+      <title>Dataset</title>
       <link>https://simakis.me/tags/dataset/</link>
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
@@ -174,7 +175,7 @@
     </item>
     
     <item>
-      <title>eda</title>
+      <title>Eda</title>
       <link>https://simakis.me/tags/eda/</link>
       <pubDate>Sat, 18 Jan 2020 15:24:09 +0200</pubDate>
       
@@ -183,7 +184,7 @@
     </item>
     
     <item>
-      <title>cv</title>
+      <title>Cv</title>
       <link>https://simakis.me/tags/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

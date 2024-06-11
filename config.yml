@@ -9,7 +9,6 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
-disqusShortname: simakis-me
 
 minify:
   disableXML: true
@@ -54,7 +53,7 @@ params:
   defaultTheme: auto
   disableThemeToggle: false
   ShowShareButtons: true
-  ShareButtons: ['twitter', 'linkedin', 'reddit', 'facebook']
+  ShareButtons: []
   ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
@@ -63,7 +62,6 @@ params:
   ShowCodeCopyButtons: true
   ShowToc: true
   comments: true
-  disqusShortname: simakis-me
   images: [ "/images/home-1.jpg" ]
   keywords: ["panagiotis simakis", "simakis", "website", "personal website", "blog", "data science", "data engineering", "machine learning", "open-source"]
 
@@ -103,12 +101,6 @@ params:
       url: "https://keybase.io/spithas"
     - name: goodreads
       url: "https://www.goodreads.com/user/show/114273410-panagiotis-simakis"
-    - name: googlescholar
-      url: "https://scholar.google.com/citations?hl=en&user=8TCTBa0AAAAJ"
-    - name: researchgate
-      url: "https://www.researchgate.net/profile/Panagiotis-Simakis"
-    - name: reddit
-      url: "https://www.reddit.com/user/sp1thas_"
     - name: cv
       url: "/cv.pdf"
     - name: Rss
@@ -168,20 +160,20 @@ markup:
 
 privacy:
   vimeo:
-    disabled: false
+    disabled: true
     simple: true
 
   twitter:
-    disabled: false
+    disabled: true
     enableDNT: true
     simple: true
 
   instagram:
-    disabled: false
+    disabled: true
     simple: true
 
   youtube:
-    disabled: false
+    disabled: true
     privacyEnhanced: true
 
 services:
