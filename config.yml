@@ -93,16 +93,10 @@ params:
       url: "https://twitter.com/sp1thas"
     - name: stackoverflow
       url: "https://stackoverflow.com/users/6779252/panagiotis-simakis"
-    - name: dev
-      url: "https://dev.to/sp1thas"
     - name: kaggle
       url: "https://kaggle.com/sp1thas"
-    - name: keybase
-      url: "https://keybase.io/spithas"
     - name: goodreads
       url: "https://www.goodreads.com/user/show/114273410-panagiotis-simakis"
-    - name: cv
-      url: "/cv.pdf"
     - name: Rss
       url: "index.xml"
 
